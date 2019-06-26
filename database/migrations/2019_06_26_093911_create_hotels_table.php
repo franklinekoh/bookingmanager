@@ -21,7 +21,7 @@ class CreateHotelsTable extends Migration
             $table->string('state', 100);
             $table->string('country', 100);
             $table->string('zipcode', 15);
-            $table->string('phone', 15);
+            $table->string('phone', 40);
             $table->string('email', 50);
             $table->string('image_path');
             $table->timestamps();

@@ -5,6 +5,9 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
 
+use App\Repositories\HotelRepositoryInterface;
+use App\Repositories\HotelRepository;
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -14,7 +17,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind(
+            HotelRepositoryInterface::class,
+        HotelRepository::class);
     }
 
     /**
