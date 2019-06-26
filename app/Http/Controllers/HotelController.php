@@ -60,4 +60,34 @@ class HotelController extends Controller
        ]);
 
     }
+
+    /**
+     * Edits hotel details with it's ID
+     *
+     * @param $request Request
+     * @return mixed
+     */
+    public function editHotel(Request $request){
+
+        $validator = Validator::make($request->all(),
+            [
+                'hotelID' => 'required|numeric|exists:hotels,id',
+                'data' => 'required'
+            ]);
+
+        if($validator->fails()){
+            return response()->json([
+                'status' => false,
+                'message' => $validator->errors()->all()
+            ]);
+        }
+
+         $this->hotel->update($request->input('hotelID'), $request->input('data'));
+
+       return response()->json([
+           'status' => true,
+           'message' => 'Movie updated successfully',
+           'data' => null
+       ]);
+    }
 }

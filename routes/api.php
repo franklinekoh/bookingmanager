@@ -17,7 +17,12 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+/**
+ * All routes related to hotel
+ */
 Route::prefix('hotel')->group(function () {
 
     Route::get('/{hotelID}', 'HotelController@getHotel');
+
+    Route::put('/', 'HotelController@editHotel');
 });
