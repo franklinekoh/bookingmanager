@@ -37,4 +37,6 @@ Route::prefix('room')->group(function () {
     Route::put('type', 'RoomTypeController@editRoomType');
 
     Route::get('type', 'RoomTypeController@getRoomTypes');
+
+    Route::delete('type', 'RoomTypeController@deleteRoomType');
 });

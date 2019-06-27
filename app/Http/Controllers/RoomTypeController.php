@@ -104,10 +104,30 @@ class RoomTypeController extends Controller
     /**
      * Delete Room type
      *
-     * @param $roomTypeID
-     * @return void
+     * @param Request $request
+     * @return mixed
      */
-    public function deleteRoomType($roomTypeID){
+    public function deleteRoomType(Request $request){
+
+        $validator = Validator::make($request->all(),
+            [
+                'roomTypeID' => 'required|numeric|exists:room_type,id',
+            ]);
+
+        if($validator->fails()){
+            return response()->json([
+                'status' => false,
+                'message' => $validator->errors()->all()
+            ]);
+        }
+
+        $this->roomType->delete($request->input('roomTypeID'));
+
+        return response()->json([
+            'status' => true,
+            'message' => 'Room type deleted successfully',
+            'data' => null
+        ]);
 
     }
 }
