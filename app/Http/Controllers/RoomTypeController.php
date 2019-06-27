@@ -62,8 +62,28 @@ class RoomTypeController extends Controller
      * @param Request $request
      * @return mixed
      */
-    public function updateRoomType(Request $request){
+    public function editRoomType(Request $request){
 
+        $validator = Validator::make($request->all(),
+            [
+                'roomTypeID' => 'required|numeric|exists:room_type,id',
+                'data' => 'required'
+            ]);
+
+        if($validator->fails()){
+            return response()->json([
+                'status' => false,
+                'message' => $validator->errors()->all()
+            ]);
+        }
+
+        $this->roomType->update($request->input('roomTypeID'), $request->input('data'));
+
+        return response()->json([
+            'status' => true,
+            'message' => 'Room type edited successfully',
+            'data' => null
+        ]);
     }
 
     /**

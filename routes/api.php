@@ -33,4 +33,6 @@ Route::prefix('hotel')->group(function () {
 Route::prefix('room')->group(function () {
 
     Route::post('type', 'RoomTypeController@createRoomType');
+
+    Route::put('type', 'RoomTypeController@editRoomType');
 });

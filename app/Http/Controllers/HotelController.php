@@ -86,7 +86,7 @@ class HotelController extends Controller
 
        return response()->json([
            'status' => true,
-           'message' => 'Movie updated successfully',
+           'message' => 'Movie edited successfully',
            'data' => null
        ]);
     }
