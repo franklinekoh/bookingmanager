@@ -42,7 +42,14 @@ Route::prefix('room')->group(function () {
 
     Route::get('/', 'Room\RoomController@getRooms');
 
+    Route::get('/{id}', 'Room\RoomController@getRoomByID');
+
     Route::post('/', 'Room\RoomController@createRoom');
 
+    Route::get('available', 'Room\RoomController@getAvailableRoom');
+
+    Route::put('/', 'Room\RoomController@editRoom');
+
+    Route::delete('/', 'Room\RoomController@deleteRoom');
 
 });

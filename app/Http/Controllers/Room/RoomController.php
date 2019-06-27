@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Room;
 
 use App\Http\Controllers\Controller;
 use App\Repositories\Room\RoomRepositoryInterface;
+use App\Room;
 use Illuminate\Http\Request;
 use Validator;
 use App\Utilities\ImageUtility;
@@ -34,9 +35,13 @@ class RoomController extends Controller
      */
 
     public function getRooms(){
-        $data = $this->room->get();
 
-        return $data;
+        $data = $this->room->get();
+        return response()->json([
+            'status' => true,
+            'message' => null,
+            'data' => $data
+        ]);
     }
 
     /**
@@ -88,5 +93,110 @@ class RoomController extends Controller
             'data' => null
         ]);
 
+    }
+
+    /**
+     * get available rooms
+     * @return mixed
+     */
+    public function getAvailableRoom(){
+
+        $data = $this->room->getAvailableRooms();
+        return response()->json([
+            'status' => true,
+            'message' => null,
+            'data' => $data
+        ]);
+    }
+
+    /**
+     * get individual room
+     *
+     * @param $id
+     * @return mixed
+     */
+    public function getRoomByID($id){
+
+        $request = [
+            'roomID' => $id
+        ];
+
+        $validator = Validator::make($request,
+            [
+                'roomID' => 'required|exists:rooms,id',
+            ]);
+
+        if($validator->fails()){
+            return response()->json([
+                'status' => false,
+                'message' => $validator->errors()->all()
+            ]);
+        }
+
+        $data = $this->room->getRoomByID($id);
+        return response()->json([
+            'status' => true,
+            'message' => null,
+            'data' => $data
+        ]);
+    }
+
+    /**
+     * Edit room
+     *
+     * @param Request $request
+     * @return mixed
+     */
+    public function editRoom(Request $request){
+
+        $validator = Validator::make($request->all(),
+            [
+                'roomID' => 'required|exists:rooms,id',
+            ]);
+
+        if($validator->fails()){
+            return response()->json([
+                'status' => false,
+                'message' => $validator->errors()->all()
+            ]);
+        }
+
+        $this->room->update($request->input('roomID'), $request->input('data'));
+
+        return response()->json([
+            'status' => true,
+            'message' => 'Room edited successfully',
+            'data' => null
+        ]);
+    }
+
+    /**
+     * Delete room
+     *
+     * @param Request $request
+     * @return mixed
+     */
+
+    public function deleteRoom(Request $request){
+
+        $validator = Validator::make($request->all(),
+            [
+                'roomID' => 'required|exists:rooms,id',
+            ]);
+
+        if($validator->fails()){
+            return response()->json([
+                'status' => false,
+                'message' => $validator->errors()->all()
+            ]);
+        }
+
+        $this->room->delete($request->input('roomID'));
+
+        return response()->json([
+            'status' => true,
+            'message' => 'Room deleted successfully',
+            'data' => null
+        ]);
     }
 }

@@ -17,7 +17,23 @@ class RoomRepository implements RoomRepositoryInterface
     public function get(){
         return Room::join('room_type', 'room_type.id', '=', 'rooms.room_type_id')
                     ->join('hotels', 'rooms.hotel_id', '=', 'hotels.id')
-                        ->get();
+                        ->get(['rooms.id',
+                            'room_name',
+                            'hotel_id',
+                            'room_type_id',
+                            'is_available',
+                            'rooms.created_at',
+                            'type_name as room_type',
+                            'name as hotel_name',
+                            'address as hotel_address',
+                            'city as hotel_city',
+                            'state as hotel_state',
+                            'country as hotel_country',
+                            'zipcode',
+                            'phone',
+                            'email',
+                            'image_path as hotel_image_path']);
+
     }
 
     /**
@@ -27,18 +43,51 @@ class RoomRepository implements RoomRepositoryInterface
      * @return Collection
      */
     public function getRoomByID($roomID){
-        return Room::find($roomID)->get();
+      return  Room::find($roomID)
+            ->join('room_type', 'room_type.id', '=', 'rooms.room_type_id')
+            ->join('hotels', 'rooms.hotel_id', '=', 'hotels.id')
+            ->get(['rooms.id',
+                'room_name',
+                'hotel_id',
+                'room_type_id',
+                'is_available',
+                'rooms.created_at',
+                'type_name as room_type',
+                'name as hotel_name',
+                'address as hotel_address',
+                'city as hotel_city',
+                'state as hotel_state',
+                'country as hotel_country',
+                'zipcode',
+                'phone',
+                'email',
+                'image_path as hotel_image_path']);
     }
 
     /**
      * Gets available room
-     *
-     * @param $roomID
      * @return Collection
      */
-    public function getAvailableRooms($roomID){
-//        return Room::find($roomID)
-//                    where('')->get();
+    public function getAvailableRooms(){
+        return Room::where('is_available', 1)
+             ->join('room_type', 'room_type.id', '=', 'rooms.room_type_id')
+            ->join('hotels', 'rooms.hotel_id', '=', 'hotels.id')
+            ->get(['rooms.id',
+                'room_name',
+                'hotel_id',
+                'room_type_id',
+                'is_available',
+                'rooms.created_at',
+                'type_name as room_type',
+                'name as hotel_name',
+                'address as hotel_address',
+                'city as hotel_city',
+                'state as hotel_state',
+                'country as hotel_country',
+                'zipcode',
+                'phone',
+                'email',
+                'image_path as hotel_image_path']);
     }
 
     /**
@@ -57,7 +106,7 @@ class RoomRepository implements RoomRepositoryInterface
      * @param array $data
      */
     public function update($roomID, array $data){
-
+            Room::find($roomID)->update($data);
     }
 
     /**
@@ -65,6 +114,6 @@ class RoomRepository implements RoomRepositoryInterface
      * @param int $roomID
      */
     public function delete($roomID){
-
+        Room::destroy($roomID);
     }
 }
