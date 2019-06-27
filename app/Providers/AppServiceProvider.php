@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\Schema;
 use App\Repositories\HotelRepositoryInterface;
 use App\Repositories\HotelRepository;
 
+use App\Repositories\RoomTypeRepositoryInterface;
+use App\Repositories\RoomTypeRepository;
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -20,6 +23,10 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(
             HotelRepositoryInterface::class,
         HotelRepository::class);
+
+        $this->app->bind(
+            RoomTypeRepositoryInterface::class,
+            RoomTypeRepository::class);
     }
 
     /**

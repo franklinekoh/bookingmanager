@@ -7,7 +7,7 @@ interface HotelRepositoryInterface
     /**
      * Gets a Hotel by it's ID
      *
-     * @param int
+     * @param int $hotelID
      */
 
     public function get($hotelID);
@@ -15,7 +15,7 @@ interface HotelRepositoryInterface
     /**
      * Stores a hotel
      *
-     * @param array
+     * @param array $data
      */
 
     public function store(array $data);
@@ -23,8 +23,8 @@ interface HotelRepositoryInterface
     /**
      * Edits a hotel by it's ID
      *
-     * @param int
-     * @param array
+     * @param int $hotelID
+     * @param array $data
      */
     public function update($hotelID, array $data);
 

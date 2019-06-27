@@ -4,9 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Hotel extends Model
+class Room extends Model
 {
-
     /**
      * The attributes that are mass assignable.
      *
@@ -14,6 +13,6 @@ class Hotel extends Model
      */
 
     protected $fillable = [
-        'name', 'address', 'city', 'state', 'country', 'zipcode', 'phone', 'email', 'image_path'
+        'room_name', 'address', 'city', 'state', 'country', 'zipcode', 'phone', 'email', 'image_path'
     ];
 }

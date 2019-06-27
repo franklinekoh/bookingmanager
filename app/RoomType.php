@@ -4,9 +4,15 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Hotel extends Model
+class RoomType extends Model
 {
 
+    /**
+     * The attributes that defines table
+     *
+     * @var array
+     */
+    protected $table = 'room_type';
     /**
      * The attributes that are mass assignable.
      *
@@ -14,6 +20,6 @@ class Hotel extends Model
      */
 
     protected $fillable = [
-        'name', 'address', 'city', 'state', 'country', 'zipcode', 'phone', 'email', 'image_path'
+        'type_name'
     ];
 }

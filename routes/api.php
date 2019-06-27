@@ -26,3 +26,11 @@ Route::prefix('hotel')->group(function () {
 
     Route::put('/', 'HotelController@editHotel');
 });
+
+/**
+ * All routes related to room
+ */
+Route::prefix('room')->group(function () {
+
+    Route::post('type', 'RoomTypeController@createRoomType');
+});
