@@ -32,11 +32,13 @@ Route::prefix('hotel')->group(function () {
  */
 Route::prefix('room')->group(function () {
 
-    Route::post('type', 'RoomTypeController@createRoomType');
+    Route::post('type', 'Room\RoomTypeController@createRoomType');
 
-    Route::put('type', 'RoomTypeController@editRoomType');
+    Route::put('type', 'Room\RoomTypeController@editRoomType');
 
-    Route::get('type', 'RoomTypeController@getRoomTypes');
+    Route::get('type', 'Room\RoomTypeController@getRoomTypes');
 
-    Route::delete('type', 'RoomTypeController@deleteRoomType');
+    Route::delete('type', 'Room\RoomTypeController@deleteRoomType');
+
+
 });

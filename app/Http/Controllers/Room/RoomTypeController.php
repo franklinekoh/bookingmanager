@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Room;
 
-use App\Repositories\RoomTypeRepositoryInterface;
+use App\Repositories\Room\RoomTypeRepositoryInterface;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Validator;
 

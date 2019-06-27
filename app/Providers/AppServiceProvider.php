@@ -8,8 +8,8 @@ use Illuminate\Support\Facades\Schema;
 use App\Repositories\HotelRepositoryInterface;
 use App\Repositories\HotelRepository;
 
-use App\Repositories\RoomTypeRepositoryInterface;
-use App\Repositories\RoomTypeRepository;
+use App\Repositories\Room\RoomTypeRepositoryInterface;
+use App\Repositories\Room\RoomTypeRepository;
 
 class AppServiceProvider extends ServiceProvider
 {
