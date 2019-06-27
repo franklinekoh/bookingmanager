@@ -4,8 +4,6 @@
 namespace App\Repositories\Room;
 
 use App\Room;
-use mysql_xdevapi\Collection;
-
 
 class RoomRepository implements RoomRepositoryInterface
 {

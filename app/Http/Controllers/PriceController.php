@@ -1,0 +1,137 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Repositories\PriceRepositoryInterface;
+use Illuminate\Http\Request;
+use Validator;
+
+class PriceController extends Controller
+{
+    /**
+     * The Price repository instance.
+     *
+     * @var \App\Repositories\PriceRepositoryInterface
+     */
+    protected $price;
+
+    /**
+     * PriceController constructor.
+     *
+     * @param PriceRepositoryInterface $price
+     */
+    public function __construct(PriceRepositoryInterface $price)
+    {
+        $this->price = $price;
+    }
+
+    /**
+     * Gets Prices all room types
+     *
+     * @return mixed
+     */
+
+    public function getPrices(){
+        $data = $this->price->get();
+
+        return response()->json([
+            'status' => true,
+            'message' => null,
+            'data' => $data
+        ]);
+    }
+
+    /**
+     * creates price for a room
+     *
+     * @param Request $request
+     * @return mixed
+     */
+    public function createPrice(Request $request){
+
+        $validator = Validator::make($request->all(),
+            [
+                'roomTypeID' => 'required|numeric|exists:room_type,id',
+                'currency' => 'required',
+                'amount' => 'required|numeric'
+            ]);
+
+        if($validator->fails()){
+            return response()->json([
+                'status' => false,
+                'message' => $validator->errors()->all()
+            ]);
+        }
+
+        $this->price->store([
+           'amount' => $request->input('amount'),
+            'currency' => $request->input('currency'),
+            'room_type_id' => $request->input('roomTypeID')
+        ]);
+
+        return response()->json([
+            'status' => true,
+            'message' => 'Price created successfully',
+            'data' => null
+        ]);
+    }
+
+    /**
+     * edit price for a room
+     *
+     * @param Request $request
+     * @return mixed
+     */
+    public function editPrice(Request $request){
+
+        $validator = Validator::make($request->all(),
+            [
+                'priceID' => 'required|numeric|exists:prices,id',
+                'data' => 'required'
+            ]);
+
+        if($validator->fails()){
+            return response()->json([
+                'status' => false,
+                'message' => $validator->errors()->all()
+            ]);
+        }
+
+        $this->price->update($request->input('priceID'), $request->input('data'));
+
+        return response()->json([
+            'status' => true,
+            'message' => 'Price edited successfully',
+            'data' => null
+        ]);
+    }
+
+    /**
+     * delete price for a room
+     *
+     * @param Request $request
+     * @return mixed
+     */
+    public function deletePrice(Request $request){
+
+        $validator = Validator::make($request->all(),
+            [
+                'priceID' => 'required|numeric|exists:prices,id'
+            ]);
+
+        if($validator->fails()){
+            return response()->json([
+                'status' => false,
+                'message' => $validator->errors()->all()
+            ]);
+        }
+
+        $this->price->delete($request->input('priceID'));
+
+        return response()->json([
+            'status' => true,
+            'message' => 'Price delete successfully',
+            'data' => null
+        ]);
+    }
+}

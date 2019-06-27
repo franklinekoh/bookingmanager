@@ -54,3 +54,16 @@ Route::prefix('room')->group(function () {
 
 });
 
+/**
+ * All routes related to prices
+ */
+Route::prefix('price')->group(function () {
+
+    Route::get('/', 'PriceController@getPrices');
+
+    Route::post('/', 'PriceController@createPrice');
+
+    Route::put('/', 'PriceController@editPrice');
+
+    Route::delete('/', 'PriceController@deletePrice');
+});
