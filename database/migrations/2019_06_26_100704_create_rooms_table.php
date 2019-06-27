@@ -18,6 +18,7 @@ class CreateRoomsTable extends Migration
             $table->string('room_name', 20);
             $table->bigInteger('hotel_id')->unsigned();
             $table->bigInteger('room_type_id')->unsigned();
+            $table->boolean('is_available')->default(1)->comment('1 for available and 0 for unavailable');
             $table->string('room_image_path');
             $table->timestamps();
             $table->foreign('hotel_id')->references('id')->on('hotels');

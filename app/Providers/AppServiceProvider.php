@@ -11,6 +11,9 @@ use App\Repositories\HotelRepository;
 use App\Repositories\Room\RoomTypeRepositoryInterface;
 use App\Repositories\Room\RoomTypeRepository;
 
+use App\Repositories\Room\RoomRepositoryInterface;
+use App\Repositories\Room\RoomRepository;
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -27,6 +30,10 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(
             RoomTypeRepositoryInterface::class,
             RoomTypeRepository::class);
+
+        $this->app->bind(
+            RoomRepositoryInterface::class,
+            RoomRepository::class);
     }
 
     /**
