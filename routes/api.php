@@ -67,3 +67,24 @@ Route::prefix('price')->group(function () {
 
     Route::delete('/', 'PriceController@deletePrice');
 });
+
+/**
+ * All routes related to authentication
+ */
+
+Route::post('register', 'AuthController@register');
+
+Route::group([
+    'middleware' => 'api',
+    'prefix' => 'auth'
+], function ($router) {
+
+    Route::post('login', 'AuthController@login');
+
+    Route::post('logout', 'AuthController@logout');
+
+    Route::post('refresh', 'AuthController@refresh');
+
+    Route::post('me', 'AuthController@me');
+
+});

@@ -30,7 +30,7 @@ class RoomTypeController extends Controller
      * Create room type
      *
      * @param Request $request
-     * @return mixed
+     * @return \Illuminate\Http\JsonResponse
      */
     public function createRoomType(Request $request){
 
@@ -60,7 +60,7 @@ class RoomTypeController extends Controller
      * Update room type
      *
      * @param Request $request
-     * @return mixed
+     * @return \Illuminate\Http\JsonResponse
      */
     public function editRoomType(Request $request){
 
@@ -88,7 +88,7 @@ class RoomTypeController extends Controller
 
     /**
      * Get room type
-     * @return mixed
+     * @return \Illuminate\Http\JsonResponse
      */
     public function getRoomTypes(){
 
@@ -106,7 +106,7 @@ class RoomTypeController extends Controller
      * Delete Room type
      *
      * @param Request $request
-     * @return mixed
+     * @return \Illuminate\Http\JsonResponse
      */
     public function deleteRoomType(Request $request){
 

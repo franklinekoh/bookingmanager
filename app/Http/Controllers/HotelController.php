@@ -31,7 +31,7 @@ class HotelController extends Controller
      * Gets Hotel details for hotel with it's ID
      *
      * @param $hotelID
-     * @return mixed
+     * @return \Illuminate\Http\JsonResponse
      */
     public function getHotel($hotelID){
 
@@ -65,7 +65,7 @@ class HotelController extends Controller
      * Edits hotel details with it's ID
      *
      * @param $request Request
-     * @return mixed
+     * @return \Illuminate\Http\JsonResponse
      */
     public function editHotel(Request $request){
 

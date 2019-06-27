@@ -17,6 +17,9 @@ use App\Repositories\Room\RoomRepository;
 use App\Repositories\PriceRepositoryInterface;
 use App\Repositories\PriceRepository;
 
+use App\Repositories\UserRepositoryInterface;
+use App\Repositories\UserRepository;
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -41,6 +44,10 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(
             PriceRepositoryInterface::class,
             PriceRepository::class);
+
+        $this->app->bind(
+            UserRepositoryInterface::class,
+            UserRepository::class);
     }
 
     /**

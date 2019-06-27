@@ -31,7 +31,7 @@ class RoomController extends Controller
 
     /**
      * Create get all rooms
-     * @return mixed
+     * @return \Illuminate\Http\JsonResponse
      */
 
     public function getRooms(){
@@ -48,7 +48,7 @@ class RoomController extends Controller
      * Create room
      *
      * @param Request $request
-     * @return mixed
+     * @return \Illuminate\Http\JsonResponse
      */
     public function createRoom(Request $request){
         $validator = Validator::make($request->all(),
@@ -97,7 +97,7 @@ class RoomController extends Controller
 
     /**
      * get available rooms
-     * @return mixed
+     * @return \Illuminate\Http\JsonResponse
      */
     public function getAvailableRooms(){
 
@@ -113,7 +113,7 @@ class RoomController extends Controller
      * get individual room
      *
      * @param $id
-     * @return mixed
+     * @return \Illuminate\Http\JsonResponse
      */
     public function getRoomByID($id){
 
@@ -145,7 +145,7 @@ class RoomController extends Controller
      * Edit room
      *
      * @param Request $request
-     * @return mixed
+     * @return \Illuminate\Http\JsonResponse
      */
     public function editRoom(Request $request){
 
@@ -174,7 +174,7 @@ class RoomController extends Controller
      * Delete room
      *
      * @param Request $request
-     * @return mixed
+     * @return \Illuminate\Http\JsonResponse
      */
 
     public function deleteRoom(Request $request){

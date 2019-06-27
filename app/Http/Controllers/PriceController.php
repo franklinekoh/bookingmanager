@@ -28,7 +28,7 @@ class PriceController extends Controller
     /**
      * Gets Prices all room types
      *
-     * @return mixed
+     * @return \Illuminate\Http\JsonResponse
      */
 
     public function getPrices(){
@@ -45,7 +45,7 @@ class PriceController extends Controller
      * creates price for a room
      *
      * @param Request $request
-     * @return mixed
+     * @return \Illuminate\Http\JsonResponse
      */
     public function createPrice(Request $request){
 
@@ -80,7 +80,7 @@ class PriceController extends Controller
      * edit price for a room
      *
      * @param Request $request
-     * @return mixed
+     * @return \Illuminate\Http\JsonResponse
      */
     public function editPrice(Request $request){
 
@@ -110,7 +110,7 @@ class PriceController extends Controller
      * delete price for a room
      *
      * @param Request $request
-     * @return mixed
+     * @return \Illuminate\Http\JsonResponse
      */
     public function deletePrice(Request $request){
 
