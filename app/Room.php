@@ -13,6 +13,6 @@ class Room extends Model
      */
 
     protected $fillable = [
-        'room_name', 'address', 'city', 'state', 'country', 'zipcode', 'phone', 'email', 'image_path'
+        'room_name', 'hotel_id', 'room_type_id',  'room_image_path'
     ];
 }

@@ -47,7 +47,7 @@ class RoomRepository implements RoomRepositoryInterface
      * @param array $data
      */
     public function store(array $data){
-
+            Room::create($data);
     }
 
     /**

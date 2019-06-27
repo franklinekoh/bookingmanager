@@ -42,5 +42,7 @@ Route::prefix('room')->group(function () {
 
     Route::get('/', 'Room\RoomController@getRooms');
 
+    Route::post('/', 'Room\RoomController@createRoom');
+
 
 });
