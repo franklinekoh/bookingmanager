@@ -17,22 +17,25 @@ class RoomRepository implements RoomRepositoryInterface
     public function get(){
         return Room::join('room_type', 'room_type.id', '=', 'rooms.room_type_id')
                     ->join('hotels', 'rooms.hotel_id', '=', 'hotels.id')
-                        ->get(['rooms.id',
-                            'room_name',
-                            'hotel_id',
-                            'room_type_id',
-                            'is_available',
-                            'rooms.created_at',
-                            'type_name as room_type',
-                            'name as hotel_name',
-                            'address as hotel_address',
-                            'city as hotel_city',
-                            'state as hotel_state',
-                            'country as hotel_country',
-                            'zipcode',
-                            'phone',
-                            'email',
-                            'image_path as hotel_image_path']);
+            ->leftJoin('prices', 'room_type.id', '=', 'prices.room_type_id')
+            ->get(['rooms.id',
+                'room_name',
+                'hotel_id',
+                'rooms.room_type_id',
+                'is_available',
+                'rooms.created_at',
+                'type_name as room_type',
+                'name as hotel_name',
+                'address as hotel_address',
+                'city as hotel_city',
+                'state as hotel_state',
+                'country as hotel_country',
+                'zipcode',
+                'phone',
+                'email',
+                'image_path as hotel_image_path',
+                'amount',
+                'currency']);
 
     }
 
@@ -46,22 +49,25 @@ class RoomRepository implements RoomRepositoryInterface
       return  Room::find($roomID)
             ->join('room_type', 'room_type.id', '=', 'rooms.room_type_id')
             ->join('hotels', 'rooms.hotel_id', '=', 'hotels.id')
-            ->get(['rooms.id',
-                'room_name',
-                'hotel_id',
-                'room_type_id',
-                'is_available',
-                'rooms.created_at',
-                'type_name as room_type',
-                'name as hotel_name',
-                'address as hotel_address',
-                'city as hotel_city',
-                'state as hotel_state',
-                'country as hotel_country',
-                'zipcode',
-                'phone',
-                'email',
-                'image_path as hotel_image_path']);
+          ->leftJoin('prices', 'room_type.id', '=', 'prices.room_type_id')
+          ->get(['rooms.id',
+              'room_name',
+              'hotel_id',
+              'rooms.room_type_id',
+              'is_available',
+              'rooms.created_at',
+              'type_name as room_type',
+              'name as hotel_name',
+              'address as hotel_address',
+              'city as hotel_city',
+              'state as hotel_state',
+              'country as hotel_country',
+              'zipcode',
+              'phone',
+              'email',
+              'image_path as hotel_image_path',
+              'amount',
+              'currency']);
     }
 
     /**
@@ -72,10 +78,11 @@ class RoomRepository implements RoomRepositoryInterface
         return Room::where('is_available', 1)
              ->join('room_type', 'room_type.id', '=', 'rooms.room_type_id')
             ->join('hotels', 'rooms.hotel_id', '=', 'hotels.id')
+            ->leftJoin('prices', 'room_type.id', '=', 'prices.room_type_id')
             ->get(['rooms.id',
                 'room_name',
                 'hotel_id',
-                'room_type_id',
+                'rooms.room_type_id',
                 'is_available',
                 'rooms.created_at',
                 'type_name as room_type',
@@ -87,7 +94,9 @@ class RoomRepository implements RoomRepositoryInterface
                 'zipcode',
                 'phone',
                 'email',
-                'image_path as hotel_image_path']);
+                'image_path as hotel_image_path',
+                'amount',
+                'currency']);
     }
 
     /**

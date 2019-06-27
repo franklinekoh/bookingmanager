@@ -46,10 +46,11 @@ Route::prefix('room')->group(function () {
 
     Route::post('/', 'Room\RoomController@createRoom');
 
-    Route::get('available', 'Room\RoomController@getAvailableRoom');
+    Route::get('get/available', 'Room\RoomController@getAvailableRooms');
 
     Route::put('/', 'Room\RoomController@editRoom');
 
     Route::delete('/', 'Room\RoomController@deleteRoom');
 
 });
+

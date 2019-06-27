@@ -99,7 +99,7 @@ class RoomController extends Controller
      * get available rooms
      * @return mixed
      */
-    public function getAvailableRoom(){
+    public function getAvailableRooms(){
 
         $data = $this->room->getAvailableRooms();
         return response()->json([

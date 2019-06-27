@@ -17,9 +17,9 @@ class CreatePricesTable extends Migration
             $table->bigIncrements('id');
             $table->integer('amount');
             $table->string('currency', 10);
-            $table->bigInteger('room_id')->unsigned();
+            $table->bigInteger('room_type_id')->unsigned()->unique();
             $table->timestamps();
-            $table->foreign('room_id')->references('id')->on('rooms');
+            $table->foreign('room_type_id')->references('id')->on('room_type');
         });
     }
 
