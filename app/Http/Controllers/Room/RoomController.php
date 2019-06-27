@@ -34,9 +34,13 @@ class RoomController extends Controller
      */
 
     public function getRooms(){
-        $data = $this->room->get();
 
-        return $data;
+        $data = $this->room->get();
+        return response()->json([
+            'status' => true,
+            'message' => null,
+            'data' => $data
+        ]);
     }
 
     /**
@@ -88,5 +92,19 @@ class RoomController extends Controller
             'data' => null
         ]);
 
+    }
+
+    /**
+     * get available rooms
+     * @return mixed
+     */
+    public function getAvailableRoom(){
+
+        $data = $this->room->getAvailableRooms();
+        return response()->json([
+            'status' => true,
+            'message' => null,
+            'data' => $data
+        ]);
     }
 }
