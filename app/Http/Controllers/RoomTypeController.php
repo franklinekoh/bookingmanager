@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Repositories\RoomTypeRepositoryInterface;
-use App\RoomType;
 use Illuminate\Http\Request;
 use Validator;
 
@@ -90,7 +89,15 @@ class RoomTypeController extends Controller
      * Get room type
      * @return mixed
      */
-    public function getRoomType(){
+    public function getRoomTypes(){
+
+        $data = $this->roomType->get();
+
+        return response()->json([
+            'status' => true,
+            'message' => null,
+            'data' => $data
+        ]);
 
     }
 
