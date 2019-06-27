@@ -17,17 +17,13 @@ interface RoomRepositoryInterface
      * Gets a room by its ID
      *
      * @param $roomID
-     * @return Collection
      */
     public function getRoomByID($roomID);
 
     /**
      * Gets available room
-     *
-     * @param $roomID
-     * @return Collection
      */
-    public function getAvailableRooms($roomID);
+    public function getAvailableRooms();
 
     /**
      * Stores a room
