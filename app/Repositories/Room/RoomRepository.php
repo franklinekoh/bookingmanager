@@ -55,7 +55,7 @@ class RoomRepository implements RoomRepositoryInterface
                 ->join('room_type', 'room_type.id', '=', 'rooms.room_type_id')
                 ->join('hotels', 'rooms.hotel_id', '=', 'hotels.id')
                 ->leftJoin('prices', 'room_type.id', '=', 'prices.room_type_id')
-                ->get(['rooms.id',
+                ->first(['rooms.id',
                     'room_name',
                     'hotel_id',
                     'rooms.room_type_id',
@@ -117,32 +117,11 @@ class RoomRepository implements RoomRepositoryInterface
      * Gets available room by it's ID
      *
      * @param $roomID
-     * @return \Illuminate\Database\Eloquent\Collection|string
+     * @return boolean|string
      */
-    public function getAvailableRoomByID($roomID){
+    public function checkRoomAvailability($roomID){
         try{
-            return Room::where('is_available', $roomID)
-                ->join('room_type', 'room_type.id', '=', 'rooms.room_type_id')
-                ->join('hotels', 'rooms.hotel_id', '=', 'hotels.id')
-                ->leftJoin('prices', 'room_type.id', '=', 'prices.room_type_id')
-                ->first(['rooms.id',
-                    'room_name',
-                    'hotel_id',
-                    'rooms.room_type_id',
-                    'is_available',
-                    'rooms.created_at',
-                    'type_name as room_type',
-                    'name as hotel_name',
-                    'address as hotel_address',
-                    'city as hotel_city',
-                    'state as hotel_state',
-                    'country as hotel_country',
-                    'zipcode',
-                    'phone',
-                    'email',
-                    'image_path as hotel_image_path',
-                    'amount',
-                    'currency']);
+            return Room::where('id', $roomID)->first('is_available')->is_available;
         }catch (QueryException $ex){
             return $ex->getMessage();
         }

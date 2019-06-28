@@ -26,6 +26,13 @@ interface RoomRepositoryInterface
     public function getAvailableRooms();
 
     /**
+     * Check if room is available
+     *
+     * @param $roomID
+     */
+    public function checkRoomAvailability($roomID);
+
+    /**
      * Stores a room
      *
      * @param array $data

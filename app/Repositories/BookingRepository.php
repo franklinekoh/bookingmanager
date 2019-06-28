@@ -5,7 +5,7 @@ namespace App\Repositories;
 
 
 use Illuminate\Database\QueryException;
-use App\Book;
+use App\Bookings;
 
 class BookingRepository implements BookingRepositoryInterface
 {
@@ -35,7 +35,7 @@ return 1;
 
     public function getBookingByID($bookingID){
         try{
-         return   Book::find($bookingID);
+         return   Bookings::find($bookingID);
         }catch (QueryException $ex){
             return $ex->getMessage();
         }
@@ -50,7 +50,7 @@ return 1;
 
     public function store(array $data){
         try{
-
+            return Bookings::create($data);
         }catch (QueryException $ex){
             return $ex->getMessage();
         }

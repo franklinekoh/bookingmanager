@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Repositories\BookingRepositoryInterface;
-use App\Repositories\Room\RoomRepositoryInterface;
 use Validator;
+use App\Utilities\BookingUtility;
+use App\Repositories\Room\RoomRepository;
 
 class BookingController extends Controller
 {
@@ -19,20 +21,12 @@ class BookingController extends Controller
     /**
      * The room repository instance.
      *
-     * @var \App\Repositories\Room\RoomRepositoryInterface
+     * @var \App\Utilities\BookingUtilityInterface
      */
-    protected $room;
 
-    /**
-     * BookingController constructor.
-     *
-     * @param BookingRepositoryInterface $book
-     * @param RoomRepositoryInterface $room
-     */
-    public function __construct(BookingRepositoryInterface $book, RoomRepositoryInterface $room)
+    public function __construct(BookingRepositoryInterface $book)
     {
         $this->book = $book;
-        $this->room = $room;
     }
 
 
@@ -73,7 +67,7 @@ class BookingController extends Controller
      * @param Request $request
      * @return \Illuminate\Http\JsonResponse
      */
-    public function storeBookings(Request $request){
+    public function storeBooking(Request $request, $userID = null){
         $validator = Validator::make($request->all(),
             [
                 'roomID' => 'required|exists:rooms,id',
@@ -89,5 +83,66 @@ class BookingController extends Controller
                 'message' => $validator->errors()->all()
             ]);
         }
+
+        $bookingUtility = new BookingUtility(
+            $request->input('startDate'),
+            $request->input('endDate'),
+            $request->input('roomID'),
+            new RoomRepository());
+
+        if (!$bookingUtility->checkRoomAvailability())
+            return response()->json([
+                'status' => false,
+                'message' => 'The selected room is not available',
+                'data' => null
+            ]);
+
+        $totalNights = $bookingUtility->getTotalNights();
+        $totalPrice = $bookingUtility->getTotalPrice();
+
+       $data = $this->book->store([
+            'room_id' => $request->input('roomID'),
+            'start_date' => Carbon::parse($request->input('startDate')),
+            'end_date' => Carbon::parse($request->input('endDate')),
+            'customer_fullname' => $request->input('customerName'),
+            'customer_email' => $request->input('customerEmail'),
+            'total_nights' => $totalNights,
+            'total_price' => $totalPrice['amount'],
+            'user_id' => $userID
+        ]);
+
+
+        if (gettype($data) == 'string')
+            return response()->json([
+                'status' => false,
+                'message' => $data
+            ]);
+
+        return response()->json([
+            'status' => true,
+            'message' => 'Booking created successfully',
+            'data' => $data
+        ]);
+    }
+
+    /**
+     * Stores a booking for unregisteredUsers
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function storeBookingForUnregisteredUsers(Request $request){
+       return $this->storeBooking($request);
+    }
+
+    /**
+     * Stores a booking for registeredUsers
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+
+    public function storeBookingForRegisteredUsers(Request $request){
+       return $this->storeBooking($request, auth()->user()->id);
     }
 }

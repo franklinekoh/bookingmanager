@@ -76,7 +76,7 @@ Route::post('register', 'AuthController@register');
 
 Route::group([
     'prefix' => 'auth'
-], function ($router) {
+], function () {
 
     Route::post('login', 'AuthController@login');
 
@@ -92,11 +92,14 @@ Route::group([
  * All routes related to booking
  */
 Route::group([
-    'middleware' => 'auth',
+//    'middleware' => 'auth',
     'prefix' => 'bookings'
-], function ($router) {
+], function () {
 
     Route::get('/{bookingID}', 'BookingController@getBookingByID');
 
+    Route::post('user/', 'BookingController@storeBookingForRegisteredUsers');
+
+    Route::post('visitor/', 'BookingController@storeBookingForUnregisteredUsers');
 
 });
