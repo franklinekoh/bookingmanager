@@ -10,11 +10,9 @@ interface BookingRepositoryInterface
     /**
      * Gets all bookings
      *
-     * @param $year
-     * @param $month
      */
 
-    public function get($year, $month);
+    public function get();
 
     /**
      * Gets a booking by it's ID
@@ -46,4 +44,12 @@ interface BookingRepositoryInterface
      * @param int $bookingID
      */
     public function delete($bookingID);
+
+    /**
+     * Gets filtered bookings
+     *
+     * @param $year
+     * @param $month
+     */
+    public function getFilteredBookings($year, $month = null);
 }

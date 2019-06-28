@@ -146,8 +146,46 @@ class BookingController extends Controller
        return $this->storeBooking($request, auth()->user()->id);
     }
 
+    /**
+     * Stores all Bookings
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function getBookings(){
+       $data = $this->book->get();
 
+        return response()->json([
+            'status' => false,
+            'message' => null,
+            'data' => $data
+        ]);
+    }
+
+    /**
+     * Gets filtered
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function getFilteredBookings(Request $request){
+
+        $validator = Validator::make($request->all(),
+            [
+                'year' => 'required|numeric'
+            ]);
+
+        if($validator->fails()){
+            return response()->json([
+                'status' => false,
+                'message' => $validator->errors()->all()
+            ]);
+        }
+
+        $data = $this->book->getFilteredBookings($request->input('year'), ($request->has('month'))?$request->input('month'):null);
+        return response()->json([
+            'status' => true,
+            'message' => null,
+            'data' => $data
+        ]);
     }
 
     /**

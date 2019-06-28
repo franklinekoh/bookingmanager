@@ -18,12 +18,32 @@ class BookingRepository implements BookingRepositoryInterface
      * @return \Illuminate\Database\Eloquent\Collection|string
      */
 
-    public function get($year, $month){
+    public function get(){
         try{
-return 1;
+            return Bookings::all();
         }catch (QueryException $ex){
             return $ex->getMessage();
         }
+    }
+
+    /**
+     * Gets filtered bookings
+     *
+     * @param $year
+     * @param $month
+     * @return \Illuminate\Database\Eloquent\Collection|string
+     */
+    public function getFilteredBookings($year, $month = null){
+        try{
+            if ($month !== null)
+                return Bookings::whereYear('created_at', '=', $year)
+                                ->whereMonth('created_at', '=', $month)->get();
+
+                return Bookings::whereYear('created_at', '=', $year)->get();
+        }catch (QueryException $ex){
+            return $ex->getMessage();
+        }
+
     }
 
     /**

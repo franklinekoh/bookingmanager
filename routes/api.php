@@ -96,6 +96,10 @@ Route::group([
     'prefix' => 'bookings'
 ], function () {
 
+    Route::get('/', 'BookingController@getBookings');
+
+    Route::get('/filter', 'BookingController@getFilteredBookings');
+
     Route::get('/{bookingID}', 'BookingController@getBookingByID');
 
     Route::post('user/', 'BookingController@storeBookingForRegisteredUsers');
