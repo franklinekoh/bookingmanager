@@ -77,7 +77,13 @@ class RoomTypeController extends Controller
             ]);
         }
 
-        $this->roomType->update($request->input('roomTypeID'), $request->input('data'));
+       $updated = $this->roomType->update($request->input('roomTypeID'), $request->input('data'));
+        if (gettype($updated) != 'integer')
+            return response()->json([
+                'status' => false,
+                'message' => $updated,
+                'data' => null
+            ]);
 
         return response()->json([
             'status' => true,

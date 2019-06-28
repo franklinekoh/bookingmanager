@@ -3,6 +3,7 @@
 namespace App\Repositories\Room;
 
 use App\RoomType;
+use Illuminate\Database\QueryException;
 
 
 class RoomTypeRepository implements RoomTypeRepositoryInterface
@@ -11,19 +12,30 @@ class RoomTypeRepository implements RoomTypeRepositoryInterface
     /**
      * Gets all room types
      *
-     * @return Object
+     * @return \Illuminate\Database\Eloquent\Collection|string
      */
     public function get(){
-        return RoomType::all();
+        try{
+            return RoomType::all();
+        }catch (QueryException $ex){
+            return $ex->getMessage();
+        }
+
     }
 
     /**
      * Stores a room type
      *
      * @param array $data
+     * @return \Illuminate\Database\Eloquent\Collection|string
      */
     public function store(array $data){
-         RoomType::create($data);
+        try{
+            RoomType::create($data);
+        }catch (QueryException $ex){
+            return $ex->getMessage();
+        }
+
     }
 
     /**
@@ -31,16 +43,29 @@ class RoomTypeRepository implements RoomTypeRepositoryInterface
      *
      * @param int $roomTypeID
      * @param array $data
+     * @return \Illuminate\Database\Eloquent\Collection|string
      */
     public function update($roomTypeID, array $data){
-         RoomType::find($roomTypeID)->update($data);
+        try{
+            RoomType::where('id', $roomTypeID)->update($data);
+        }catch (QueryException $ex){
+            return $ex->getMessage();
+        }
+
     }
 
     /**
      * Deletes a room type by it's ID
+     *
      * @param int $roomTypeID
+     * @return boolean|string
      */
     public function delete($roomTypeID){
-        RoomType::find($roomTypeID)->delete();
+        try{
+           return RoomType::destroy($roomTypeID);
+        }catch (QueryException $ex){
+            return $ex->getMessage();
+        }
+
     }
 }

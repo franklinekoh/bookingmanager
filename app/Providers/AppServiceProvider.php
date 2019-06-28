@@ -20,6 +20,9 @@ use App\Repositories\PriceRepository;
 use App\Repositories\UserRepositoryInterface;
 use App\Repositories\UserRepository;
 
+use App\Repositories\BookingRepositoryInterface;
+use App\Repositories\BookingRepository;
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -48,6 +51,10 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(
             UserRepositoryInterface::class,
             UserRepository::class);
+
+        $this->app->bind(
+            BookingRepositoryInterface::class,
+            BookingRepository::class);
     }
 
     /**

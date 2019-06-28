@@ -75,7 +75,6 @@ Route::prefix('price')->group(function () {
 Route::post('register', 'AuthController@register');
 
 Route::group([
-    'middleware' => 'api',
     'prefix' => 'auth'
 ], function ($router) {
 
@@ -86,5 +85,18 @@ Route::group([
     Route::post('refresh', 'AuthController@refresh');
 
     Route::post('me', 'AuthController@me');
+
+});
+
+/**
+ * All routes related to booking
+ */
+Route::group([
+    'middleware' => 'auth',
+    'prefix' => 'bookings'
+], function ($router) {
+
+    Route::get('/{bookingID}', 'BookingController@getBookingByID');
+
 
 });

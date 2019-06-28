@@ -4,85 +4,84 @@
 namespace App\Repositories;
 
 
-use Faker\Test\Provider\Collection;
-use App\Price;
 use Illuminate\Database\QueryException;
+use App\Book;
 
-class PriceRepository implements PriceRepositoryInterface
+class BookingRepository implements BookingRepositoryInterface
 {
 
     /**
-     * Gets all prices
+     * Gets all bookings
      *
+     * @param $year
+     * @param $month
      * @return \Illuminate\Database\Eloquent\Collection|string
      */
 
-    public function get(){
-
+    public function get($year, $month){
         try{
-            return Price::join('room_type', 'prices.room_type_id', '=', 'room_type.id')
-                ->get([
-                    'amount',
-                    'currency',
-                    'type_name as room_type',
-                    'prices.created_at'
-                ]);
+return 1;
         }catch (QueryException $ex){
             return $ex->getMessage();
         }
-
-
     }
 
     /**
-     * Stores a price
+     * Gets a booking by it's ID
+     *
+     * @param $bookingID
+     * @return \Illuminate\Database\Eloquent\Collection|string
+     */
+
+    public function getBookingByID($bookingID){
+        try{
+         return   Book::find($bookingID);
+        }catch (QueryException $ex){
+            return $ex->getMessage();
+        }
+    }
+
+    /**
+     * Stores a booking
      *
      * @param array $data
      * @return \Illuminate\Database\Eloquent\Collection|string
      */
 
     public function store(array $data){
-
         try{
-            return Price::create($data);
+
         }catch (QueryException $ex){
             return $ex->getMessage();
         }
-
     }
 
     /**
-     * Edits a price by it's ID
+     * Edits a booking by it's ID
      *
-     * @param int $priceID
+     * @param int $bookingID
      * @param array $data
-     *
      * @return int|string
      */
-    public function update($priceID, array $data){
-
+    public function update($bookingID, array $data){
         try{
-            return Price::where('id', '=', $priceID)->update($data);
+
         }catch (QueryException $ex){
             return $ex->getMessage();
         }
-
     }
 
     /**
-     * Deletes a price by it's ID
+     * Deletes a deletes by it's ID
      *
-     * @param int $priceID
+     * @param int $bookingID
      * @return boolean|string
      */
-    public function delete($priceID){
-
+    public function delete($bookingID){
         try{
-            return Price::destroy($priceID);
+
         }catch (QueryException $ex){
             return $ex->getMessage();
         }
-
-
     }
 }

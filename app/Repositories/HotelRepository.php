@@ -2,6 +2,7 @@
 namespace App\Repositories;
 
 use App\Hotel;
+use Illuminate\Database\QueryException;
 
 class HotelRepository implements HotelRepositoryInterface
 {
@@ -10,12 +11,17 @@ class HotelRepository implements HotelRepositoryInterface
      * Gets a Hotel by it's ID
      *
      * @param int
-     * @return Collection
+     * @return \Illuminate\Database\Eloquent\Collection|string
      */
 
     public function get($hotelID)
     {
-        return Hotel::find($hotelID);
+        try{
+            return Hotel::find($hotelID);
+        }catch (QueryException $ex){
+            return $ex->getMessage();
+        }
+
     }
 
     /**
@@ -23,11 +29,17 @@ class HotelRepository implements HotelRepositoryInterface
      *
      * @param array
      * @return boolean
+     * @return \Illuminate\Database\Eloquent\Collection|string
      */
 
     public function store(array $data)
     {
-        return Hotel::create($data);
+        try{
+            return Hotel::create($data);
+        }catch (QueryException $ex){
+            return $ex->getMessage();
+        }
+
     }
 
     /**
@@ -35,10 +47,16 @@ class HotelRepository implements HotelRepositoryInterface
      *
      * @param int
      * @param array
+     * @return int|string
      */
 
     public function update($hotelID, array $data)
     {
-         Hotel::find($hotelID)->update($data);
+        try{
+            return Hotel::where('id', $hotelID)->update($data);
+        }catch (QueryException $ex){
+            return $ex->getMessage();
+        }
+
     }
 }

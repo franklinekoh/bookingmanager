@@ -4,6 +4,7 @@
 namespace App\Repositories;
 
 use App\User;
+use Illuminate\Database\QueryException;
 
 class UserRepository implements UserRepositoryInterface
 {
@@ -13,10 +14,16 @@ class UserRepository implements UserRepositoryInterface
      *
      * @param array $data
      *
-     * @return Collection;
+     * @return \Illuminate\Database\Eloquent\Collection|string
      */
 
     public function store(array $data){
-       return User::create($data);
+
+        try{
+            return User::create($data);
+        }catch (QueryException $ex){
+            return $ex->getMessage();
+        }
+
     }
 }

@@ -82,7 +82,13 @@ class HotelController extends Controller
             ]);
         }
 
-         $this->hotel->update($request->input('hotelID'), $request->input('data'));
+         $updated = $this->hotel->update($request->input('hotelID'), $request->input('data'));
+        if (gettype($updated) != 'integer')
+            return response()->json([
+                'status' => false,
+                'message' => $updated,
+                'data' => null
+            ]);
 
        return response()->json([
            'status' => true,
