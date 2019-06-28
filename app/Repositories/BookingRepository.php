@@ -35,7 +35,7 @@ return 1;
 
     public function getBookingByID($bookingID){
         try{
-         return   Bookings::find($bookingID);
+         return  Bookings::find($bookingID);
         }catch (QueryException $ex){
             return $ex->getMessage();
         }
@@ -65,7 +65,7 @@ return 1;
      */
     public function update($bookingID, array $data){
         try{
-
+            return Bookings::where('id', $bookingID)->update($data);
         }catch (QueryException $ex){
             return $ex->getMessage();
         }

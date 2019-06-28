@@ -102,4 +102,6 @@ Route::group([
 
     Route::post('visitor/', 'BookingController@storeBookingForUnregisteredUsers');
 
+    Route::put('/', 'BookingController@editBooking');
+
 });
