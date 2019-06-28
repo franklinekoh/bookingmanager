@@ -151,7 +151,7 @@ class BookingController extends Controller
     }
 
     /**
-     * Edits and existing booking
+     * Edits an existing booking
      *
      * @param Request $request
      * @return \Illuminate\Http\JsonResponse
@@ -228,7 +228,7 @@ class BookingController extends Controller
         if ($totalNights !== null){
             $data['total_nights'] = $totalNights;
         }
-        
+
         if ($totalPrice !== null)
             $data['total_price'] = $totalPrice['amount'];
 
@@ -247,5 +247,33 @@ class BookingController extends Controller
         ]);
 
 
+    }
+
+    /**
+     * Deletes existing booking
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function deleteBooking(Request $request){
+
+        $validator = Validator::make($request->all(),
+            [
+                'bookingID' => 'required|exists:bookings,id',
+            ]);
+
+        if($validator->fails()){
+            return response()->json([
+                'status' => false,
+                'message' => $validator->errors()->all()
+            ]);
+        }
+
+        $this->book->delete($request->input('bookingID'));
+
+        return response()->json([
+            'status' => true,
+            'message' => 'booking deleted successfully'
+        ]);
     }
 }

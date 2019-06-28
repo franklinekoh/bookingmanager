@@ -104,4 +104,6 @@ Route::group([
 
     Route::put('/', 'BookingController@editBooking');
 
+    Route::delete('/', 'BookingController@deleteBooking');
+
 });

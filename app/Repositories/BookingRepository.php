@@ -79,7 +79,7 @@ return 1;
      */
     public function delete($bookingID){
         try{
-
+            return Bookings::destroy($bookingID);
         }catch (QueryException $ex){
             return $ex->getMessage();
         }
