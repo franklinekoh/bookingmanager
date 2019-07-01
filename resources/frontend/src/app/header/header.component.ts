@@ -9,6 +9,10 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
+  heading = 'Hotels';
+  subheading = 'Hotel Admin Manager';
+  icon = 'fa fa-hotel';
+
   ngOnInit() {
   }
 
