@@ -1,86 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="238de8cb-b816-40e2-9bb1-7b40be3e087a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/room/XmbCp7ED8CXIESOJ.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/e2e/protractor.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/e2e/src/app.e2e-spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/e2e/src/app.po.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/e2e/tsconfig.e2e.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/app-routing/app-routing.module.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/app-routing/app-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/app.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/footer/footer.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/footer/footer.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/footer/footer.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/footer/footer.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/header/header.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/header/header.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/header/header.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/header/header.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/page-title/page-title.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/page-title/page-title.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/page-title/page-title.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/page-title/page-title.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/fonts/Pe-icon-7-stroke.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/fonts/Pe-icon-7-stroke.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/fonts/Pe-icon-7-stroke.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/fonts/Pe-icon-7-stroke.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/fonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/fonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/fonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/fonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/fonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/avatars/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/avatars/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/avatars/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/avatars/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/avatars/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/avatars/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/avatars/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/avatars/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/avatars/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/avatars/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/logo-inverse.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/scripts/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/browserslist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/environments/environment.prod.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/environments/environment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/polyfills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/tslint.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/tslint.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/yarn.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    <list default="true" id="238de8cb-b816-40e2-9bb1-7b40be3e087a" name="Default Changelist" comment="Frontend setup and updated readme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/HotelsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/HotelsTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path=".idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -100,7 +23,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Repositories/BookingRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
+            <state relative-caret-position="697">
               <caret line="41" column="76" selection-start-line="41" selection-start-column="76" selection-end-line="41" selection-end-column="76" />
               <folding>
                 <element signature="e#38#77#0#PHP" expanded="true" />
@@ -112,7 +35,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Repositories/Room/RoomTypeRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
+            <state relative-caret-position="529">
               <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
               <folding>
                 <element signature="e#41#58#0#PHP" expanded="true" />
@@ -124,7 +47,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Utilities/BookingUtility.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
+            <state relative-caret-position="1190">
               <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
               <folding>
                 <element signature="e#34#84#0#PHP" expanded="true" />
@@ -136,7 +59,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
+            <state relative-caret-position="1428">
               <caret line="84" column="53" selection-start-line="84" selection-start-column="53" selection-end-line="84" selection-end-column="53" />
             </state>
           </provider>
@@ -146,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -154,7 +77,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
+            <state relative-caret-position="323">
               <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
             </state>
           </provider>
@@ -164,8 +87,8 @@
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="476">
-                <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+              <first_editor relative-caret-position="255">
+                <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
               </first_editor>
               <second_editor />
             </state>
@@ -175,7 +98,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
+            <state relative-caret-position="561">
               <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
               <folding>
                 <element signature="e#7#34#0#PHP" expanded="true" />
@@ -196,7 +119,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/seeds/HotelsTableSeeder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
+            <state relative-caret-position="595">
               <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="33" />
               <folding>
                 <element signature="e#7#38#0#PHP" expanded="true" />
@@ -547,7 +470,8 @@
       <updated>1561540819393</updated>
       <workItem from="1561540820634" duration="11050000" />
       <workItem from="1561552156660" duration="74665000" />
-      <workItem from="1561893173179" duration="7037000" />
+      <workItem from="1561893173179" duration="7548000" />
+      <workItem from="1561994669571" duration="689000" />
     </task>
     <task id="LOCAL-00001" summary="created database migrations">
       <created>1561552348565</created>
@@ -696,17 +620,24 @@
       <option name="project" value="LOCAL" />
       <updated>1561735563175</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Frontend setup and updated readme">
+      <created>1561970737787</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1561970737787</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92752000" />
+    <option name="totallyTimeSpent" value="93952000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -723,6 +654,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3289689" />
+      <window_info anchor="bottom" id="TypeScript" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -794,7 +726,8 @@
     <MESSAGE value="Added Edit bookings endpoint" />
     <MESSAGE value="Added Delete bookings endpoint" />
     <MESSAGE value="Added filter bookings endpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added filter bookings endpoint" />
+    <MESSAGE value="Frontend setup and updated readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Frontend setup and updated readme" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php">
@@ -1104,7 +1037,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Repositories/BookingRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
+        <state relative-caret-position="697">
           <caret line="41" column="76" selection-start-line="41" selection-start-column="76" selection-end-line="41" selection-end-column="76" />
           <folding>
             <element signature="e#38#77#0#PHP" expanded="true" />
@@ -1112,22 +1045,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/Room/RoomTypeRepository.php">
+    <entry file="file://$PROJECT_DIR$/app/Utilities/BookingUtility.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+        <state relative-caret-position="1190">
+          <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
           <folding>
-            <element signature="e#41#58#0#PHP" expanded="true" />
+            <element signature="e#34#84#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Utilities/BookingUtility.php">
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
+        <state relative-caret-position="1428">
+          <caret line="84" column="53" selection-start-line="84" selection-start-column="53" selection-end-line="84" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
           <folding>
-            <element signature="e#34#84#0#PHP" expanded="true" />
+            <element signature="e#7#34#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1141,7 +1095,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/HotelsTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
+        <state relative-caret-position="595">
           <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="33" />
           <folding>
             <element signature="e#7#38#0#PHP" expanded="true" />
@@ -1149,33 +1103,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
+    <entry file="file://$PROJECT_DIR$/app/Repositories/Room/RoomTypeRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="84" column="53" selection-start-line="84" selection-start-column="53" selection-end-line="84" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+        <state relative-caret-position="529">
+          <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
           <folding>
-            <element signature="e#7#34#0#PHP" expanded="true" />
+            <element signature="e#41#58#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1183,8 +1116,8 @@
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="476">
-            <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+          <first_editor relative-caret-position="255">
+            <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
           </first_editor>
           <second_editor />
         </state>
