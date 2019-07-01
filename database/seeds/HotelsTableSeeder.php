@@ -3,7 +3,6 @@
 use Illuminate\Database\Seeder;
 use App\Repositories\HotelRepositoryInterface;
 use Faker\Factory as Faker;
-use App\Hotel;
 
 class HotelsTableSeeder extends Seeder
 {

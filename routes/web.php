@@ -13,4 +13,6 @@
 
 Route::get('/', function () {
     return view('welcome');
+//    View::addExtension('h tml', 'php');
+//    return View::make('index');
 });
