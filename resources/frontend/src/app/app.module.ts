@@ -6,17 +6,30 @@ import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { FooterComponent } from './footer/footer.component';
 import { PageTitleComponent } from './page-title/page-title.component';
+import { HotelComponent } from './hotel/hotel.component';
+import { LoginComponent } from './login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ToastrModule } from 'ngx-toastr';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    PageTitleComponent
+    PageTitleComponent,
+    HotelComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

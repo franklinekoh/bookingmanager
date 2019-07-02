@@ -13,6 +13,7 @@ export class PageTitleComponent implements OnInit {
   }
 
   @Input() heading;
-  @Input() subheading;
-  @Input() icon;
+  @Input() previous;
+  @Input() current;
+  @Input() link;
 }
