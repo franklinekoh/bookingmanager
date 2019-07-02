@@ -11,7 +11,8 @@ declare var $: any;
 export class HeaderComponent implements OnInit {
 
   constructor(private authService: AuthService,
-              private router: Router) { }
+              private router: Router,
+              ) { }
 
   heading = 'Hotels';
   subheading = 'Hotel Admin Manager';
@@ -24,5 +25,6 @@ export class HeaderComponent implements OnInit {
     this.authService.logout();
     this.router.navigate(['login']);
   }
+
 
 }
