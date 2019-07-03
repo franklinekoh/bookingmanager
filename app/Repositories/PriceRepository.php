@@ -26,7 +26,7 @@ class PriceRepository implements PriceRepositoryInterface
                     'currency',
                     'type_name as room_type',
                     'prices.created_at'
-                ]);
+                ])->sortBy('prices.created_at');
         }catch (QueryException $ex){
             return $ex->getMessage();
         }
