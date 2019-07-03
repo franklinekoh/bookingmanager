@@ -51,7 +51,7 @@ class PriceController extends Controller
 
         $validator = Validator::make($request->all(),
             [
-                'roomTypeID' => 'required|numeric|exists:room_type,id',
+                'roomTypeID' => 'required|numeric|exists:room_type,id|unique:prices,room_type_id',
                 'currency' => 'required',
                 'amount' => 'required|numeric'
             ]);
@@ -60,7 +60,7 @@ class PriceController extends Controller
             return response()->json([
                 'status' => false,
                 'message' => $validator->errors()->all()
-            ]);
+            ], 400);
         }
 
         $this->price->store([
@@ -68,6 +68,7 @@ class PriceController extends Controller
             'currency' => $request->input('currency'),
             'room_type_id' => $request->input('roomTypeID')
         ]);
+
 
         return response()->json([
             'status' => true,
@@ -140,6 +141,16 @@ class PriceController extends Controller
             'status' => true,
             'message' => 'Price delete successfully',
             'data' => null
+        ]);
+    }
+
+    public function getPriceByID($priceID){
+        $data = $this->price->getPriceByID($priceID);
+
+        return response()->json([
+            'status' => true,
+            'message' => null,
+            'data' => $data
         ]);
     }
 }
