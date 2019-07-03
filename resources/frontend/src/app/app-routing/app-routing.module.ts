@@ -8,6 +8,7 @@ import { PageNotFoundComponent } from '../page-not-found/page-not-found.componen
 import { HotelComponent } from '../hotel/hotel.component';
 import { HotelDetailsComponent} from '../hotel-details/hotel-details.component';
 import { EditHotelComponent } from '../edit-hotel/edit-hotel.component';
+import { PricesComponent } from '../price/prices/prices.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'hotel', component: HotelComponent, canActivate: [AuthGuard]},
   { path: 'hotel/:id', component: HotelDetailsComponent, canActivate: [AuthGuard]},
   { path: 'hotel/edit/:id', component: EditHotelComponent, canActivate: [AuthGuard]},
+  { path: 'price', component: PricesComponent, canActivate: [AuthGuard]},
   { path: '', redirectTo: 'hotel', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent},
 
