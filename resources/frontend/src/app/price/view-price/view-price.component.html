@@ -1,0 +1,39 @@
+<app-header></app-header>
+<!-- ============ Body content start ============= -->
+<div class="main-content-wrap sidenav-open d-flex flex-column">
+
+
+  <app-page-title [heading]="heading"></app-page-title>
+
+  <div class="card user-profile o-hidden mb-4">
+    <div class="user-info">
+      <p class="m-0 text-24" style="padding-top: 50px;">{{priceData?.room_type}} room type</p>
+    </div>
+    <div class="card-header">
+      <button class="btn btn-warning text-right float-right" (click)="goBack()" type="button" aria-haspopup="true" aria-expanded="false">
+        go back <i class="nav-icon i-Arrow-Left"></i>
+      </button>
+    </div>
+    <div class="card-body">
+
+      <div class="row">
+        <div class="col-md-4 col-6">
+
+            <p class="text-primary mb-1"><i class="i-Money text-16 mr-1"></i> Currency</p>
+            <span>{{priceData?.currency}}</span>
+
+        </div>
+        <div class="col-md-4">
+          <p class="text-primary mb-1"><i class="i-Money-Bag text-16 mr-1"></i> Amount</p>
+          <span>{{priceData?.amount}}</span>
+        </div>
+        <div class="col-md-4">
+          <p class="text-primary mb-1"><i class="i-Window text-16 mr-1"></i> Room Type</p>
+          <span>{{priceData?.room_type}}</span>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
