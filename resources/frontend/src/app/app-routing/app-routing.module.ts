@@ -6,11 +6,15 @@ import { AuthGaurdService as AuthGuard } from '../services/auth-gaurd.service';
 import { LoginComponent } from '../login/login.component';
 import { PageNotFoundComponent } from '../page-not-found/page-not-found.component';
 import { HotelComponent } from '../hotel/hotel.component';
+import { HotelDetailsComponent} from '../hotel-details/hotel-details.component';
+import { EditHotelComponent } from '../edit-hotel/edit-hotel.component';
 
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'hotel', component: HotelComponent, canActivate: [AuthGuard]},
+  { path: 'hotel/:id', component: HotelDetailsComponent, canActivate: [AuthGuard]},
+  { path: 'hotel/edit/:id', component: EditHotelComponent, canActivate: [AuthGuard]},
   { path: '', redirectTo: 'hotel', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent},
 

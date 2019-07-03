@@ -2,1146 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="238de8cb-b816-40e2-9bb1-7b40be3e087a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/hotel/hotel.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/hotel/hotel.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/hotel/hotel.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/hotel/hotel.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/login/login.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/login/login.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/login/login.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/login/login.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/page-not-found/page-not-found.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/page-not-found/page-not-found.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/page-not-found/page-not-found.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/page-not-found/page-not-found.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/services/auth-gaurd.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/services/auth-gaurd.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/services/auth.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/services/auth.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/types/api-response.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/._.DS_Store" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/._fonts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/._images" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/._js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/._styles" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/fonts/._.DS_Store" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/fonts/._iconsmind" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/fonts/iconsmind/._iconsmind.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/fonts/iconsmind/._iconsmind.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/fonts/iconsmind/._iconsmind.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/fonts/iconsmind/._iconsmind.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/fonts/iconsmind/._iconsmind.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/fonts/iconsmind/iconsmind.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/fonts/iconsmind/iconsmind.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/fonts/iconsmind/iconsmind.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/fonts/iconsmind/iconsmind.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/fonts/iconsmind/iconsmind.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/._.DS_Store" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/._Angular_Icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/._Html_Icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/._Sass_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/._bootstrap-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/._checkmark.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/._close.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/._danger.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/._faces" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/._gull-large-sidebar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/._info.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/._laravel-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/._logo-text.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/._logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/._page-bg-bottom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/._photo-long-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/._photo-long-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/._photo-long-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/._photo-long-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/._photo-wide-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/._photo-wide-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/._photo-wide-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/._photo-wide-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/._photo-wide-5.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/._products" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/._screenshots" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/Angular_Icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/Html_Icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/Sass_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/bootstrap-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/checkmark.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/close.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/danger.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/faces/._1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/faces/._10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/faces/._12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/faces/._13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/faces/._15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/faces/._16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/faces/._17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/faces/._2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/faces/._3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/faces/._4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/faces/._5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/faces/._9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/faces/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/faces/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/faces/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/faces/13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/faces/15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/faces/16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/faces/17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/faces/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/faces/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/faces/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/faces/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/faces/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/gull-large-sidebar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/info.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/laravel-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/logo-text.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/page-bg-bottom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/photo-long-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/photo-long-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/photo-long-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/photo-long-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/photo-wide-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/photo-wide-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/photo-wide-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/photo-wide-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/photo-wide-5.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/products/._headphone-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/products/._headphone-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/products/._headphone-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/products/._headphone-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/products/._iphone-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/products/._iphone-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/products/._speaker-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/products/._speaker-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/products/._watch-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/products/._watch-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/products/headphone-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/products/headphone-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/products/headphone-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/products/headphone-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/products/iphone-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/products/iphone-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/products/speaker-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/products/speaker-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/products/watch-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/products/watch-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/screenshots/._dashboard.v1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/screenshots/._dashboard.v2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/screenshots/dashboard.v1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/images/screenshots/dashboard.v2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._.DS_Store" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._calendar.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._card.metrics.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._carousel.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._cropper.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._customizer.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._dashboard.v1.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._dashboard.v2.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._dashboard.v3.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._dashboard.v4.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._datatables.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._dropzone.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._echart.options.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._echarts.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._es5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._form.basic.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._form.validation.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._hopscotch.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._invoice.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._ladda.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._landing.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._modal.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._nuslider.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._quill.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._sidebar-horizontal.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._sidebar.compact.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._sidebar.large.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._sidebar.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._smart.wizard.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._sweetalert.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._tagging.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._toastr.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._tooltip.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/._vendor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/calendar.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/card.metrics.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/carousel.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/cropper.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/customizer.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/dashboard.v1.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/dashboard.v2.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/dashboard.v3.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/dashboard.v4.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/datatables.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/dropzone.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/echart.options.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/echarts.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._calendar.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._calendar.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._card.metrics.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._card.metrics.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._carousel.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._carousel.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._core.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._cropper.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._cropper.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._customizer.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._customizer.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._dashboard.v1.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._dashboard.v1.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._dashboard.v2.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._dashboard.v2.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._dashboard.v3.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._dashboard.v3.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._dashboard.v4.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._dashboard.v4.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._datatables.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._datatables.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._dropzone.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._dropzone.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._echart.options.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._echart.options.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._echarts.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._echarts.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._form.basic.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._form.basic.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._form.validation.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._form.validation.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._gull.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._gull.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._hopscotch.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._hopscotch.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._invoice.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._invoice.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._ladda.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._ladda.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._landing.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._landing.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._modal.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._modal.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._nuslider.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._nuslider.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._quill.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._quill.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._sidebar-horizontal.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._sidebar-horizontal.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._sidebar.compact.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._sidebar.compact.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._sidebar.large.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._sidebar.large.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._sidebar.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._sidebar.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._smart.wizard.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._smart.wizard.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._sweetalert.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._sweetalert.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._tagging.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._tagging.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._toastr.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._toastr.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._tooltip.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/._tooltip.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/calendar.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/calendar.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/card.metrics.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/card.metrics.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/carousel.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/carousel.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/core.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/cropper.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/cropper.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/customizer.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/customizer.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/dashboard.v1.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/dashboard.v1.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/dashboard.v2.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/dashboard.v2.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/dashboard.v3.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/dashboard.v3.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/dashboard.v4.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/dashboard.v4.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/datatables.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/datatables.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/dropzone.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/dropzone.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/echart.options.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/echart.options.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/echarts.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/echarts.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/form.basic.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/form.basic.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/form.validation.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/form.validation.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/gull.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/gull.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/hopscotch.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/hopscotch.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/invoice.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/invoice.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/ladda.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/ladda.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/landing.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/landing.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/modal.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/modal.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/nuslider.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/nuslider.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/quill.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/quill.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/sidebar-horizontal.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/sidebar-horizontal.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/sidebar.compact.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/sidebar.compact.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/sidebar.large.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/sidebar.large.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/sidebar.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/sidebar.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/smart.wizard.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/smart.wizard.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/sweetalert.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/sweetalert.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/tagging.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/tagging.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/toastr.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/toastr.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/tooltip.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/es5/tooltip.script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/form.basic.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/form.validation.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/hopscotch.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/invoice.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/ladda.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/landing.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/modal.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/nuslider.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/quill.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/sidebar-horizontal.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/sidebar.compact.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/sidebar.large.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/sidebar.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/smart.wizard.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/sweetalert.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/tagging.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/toastr.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/tooltip.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/._.DS_Store" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/._bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/._bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/._bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/._calendar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/._cropper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/._datatables.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/._dropzone.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/._echarts.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/._feather.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/._hopscotch.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/._jquery-3.3.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/._jquery.smartWizard.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/._ladda.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/._nuslider.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/._parsley.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/._perfect-scrollbar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/._pickadate" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/._popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/._quill.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/._spin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/._sweetalert2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/._tagging.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/._toastr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/calendar/._datepicker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/calendar/._fullcalendar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/calendar/._jquery-ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/calendar/._moment.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/calendar/datepicker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/calendar/fullcalendar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/calendar/jquery-ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/calendar/moment.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/cropper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/datatables.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/dropzone.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/echarts.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/feather.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/hopscotch.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/jquery-3.3.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/jquery.smartWizard.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/ladda.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/nuslider.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/parsley.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/perfect-scrollbar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/pickadate/._.DS_Store" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/pickadate/._legacy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/pickadate/._picker.date.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/pickadate/._picker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/pickadate/._picker.time.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/pickadate/._themes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/pickadate/legacy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/pickadate/picker.date.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/pickadate/picker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/pickadate/picker.time.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/pickadate/themes/._classic.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/pickadate/themes/._classic.date.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/pickadate/themes/._classic.time.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/pickadate/themes/._default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/pickadate/themes/._default.date.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/pickadate/themes/._default.time.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/pickadate/themes/._rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/pickadate/themes/classic.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/pickadate/themes/classic.date.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/pickadate/themes/classic.time.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/pickadate/themes/default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/pickadate/themes/default.date.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/pickadate/themes/default.time.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/pickadate/themes/rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/quill.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/spin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/sweetalert2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/tagging.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/js/vendor/toastr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/._.DS_Store" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/._css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/._sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/._vendor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/css/._.DS_Store" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/css/._bootstrap-rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/css/._bootstrap-rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/css/._themes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/css/bootstrap-rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/css/bootstrap-rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/css/themes/._dark-purple.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/css/themes/._dark-purple.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/css/themes/._lite-blue.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/css/themes/._lite-blue.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/css/themes/._lite-purple.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/css/themes/._lite-purple.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/css/themes/dark-purple.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/css/themes/dark-purple.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/css/themes/lite-blue.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/css/themes/lite-blue.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/css/themes/lite-purple.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/css/themes/lite-purple.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/._.DS_Store" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/.__variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/._bootstrap-rtl.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/._globals" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/._themes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/bootstrap-rtl.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/.__animations.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/.__box-shadow.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/.__colors.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/.__footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/.__globals.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/.__header-top.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/.__header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/.__height-width.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/.__layout.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/.__palette.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/.__typography.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/._components" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/._layouts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/._mixins" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/._views" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/_animations.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/_box-shadow.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/_colors.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/_footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/_globals.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/_header-top.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/_height-width.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/_layout.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/_palette.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/_typography.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__accordions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__alerts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__avatar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__badges.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__borders.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__breadcrumb.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__button.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__calendar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__card.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__carousel.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__components.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__customizer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__datatables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__dropdown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__editor.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__feather-icon.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__form.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__icon.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__img-cropper.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__lists.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__loader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__modals.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__nouislider.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__popover.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__progress.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__rating.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__search.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__sidebar.directive.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__smart.wizard.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__tab.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__tabs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__tagging.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__toastr.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__tour.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/.__upload.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_accordions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_alerts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_avatar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_badges.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_borders.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_breadcrumb.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_button.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_calendar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_card.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_carousel.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_components.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_customizer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_datatables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_dropdown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_editor.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_feather-icon.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_form.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_icon.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_img-cropper.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_lists.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_loader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_modals.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_nouislider.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_popover.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_progress.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_rating.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_search.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_sidebar.directive.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_smart.wizard.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_tab.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_tabs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_tagging.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_toastr.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_tour.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/components/_upload.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/layouts/.__colors.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/layouts/.__footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/layouts/.__layouts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/layouts/._horizontal-bar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/layouts/._sidebar-compact" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/layouts/._sidebar-large" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/layouts/_colors.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/layouts/_footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/layouts/_layouts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/layouts/horizontal-bar/.__header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/layouts/horizontal-bar/.__layout-horizontal-bar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/layouts/horizontal-bar/.__vars.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/layouts/horizontal-bar/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/layouts/horizontal-bar/_layout-horizontal-bar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/layouts/horizontal-bar/_vars.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/layouts/sidebar-compact/.__header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/layouts/sidebar-compact/.__layout-sidebar-compact.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/layouts/sidebar-compact/.__vars.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/layouts/sidebar-compact/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/layouts/sidebar-compact/_layout-sidebar-compact.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/layouts/sidebar-compact/_vars.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/layouts/sidebar-large/.__header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/layouts/sidebar-large/.__layout-sidebar-large.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/layouts/sidebar-large/.__vars.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/layouts/sidebar-large/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/layouts/sidebar-large/_layout-sidebar-large.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/layouts/sidebar-large/_vars.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/mixins/.__gradients.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/mixins/.__mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/mixins/_gradients.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/mixins/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/views/.__404.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/views/.__chat.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/views/.__data-tables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/views/.__inbox.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/views/.__invoice.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/views/.__landing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/views/.__session.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/views/.__user-profile.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/views/.__views.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/views/_404.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/views/_chat.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/views/_data-tables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/views/_inbox.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/views/_invoice.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/views/_landing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/views/_session.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/views/_user-profile.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/globals/views/_views.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/themes/._dark" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/themes/._dark-purple.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/themes/._lite-blue.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/themes/._lite-purple.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/themes/dark-purple.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/themes/dark/.__dark.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/themes/dark/_dark.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/themes/lite-blue.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/sass/themes/lite-purple.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/._.DS_Store" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/._animate.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/._bootstrap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/._bootstrap-rtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/._calendar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/._cropper.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/._datatables.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/._dropzone.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/._hopscotch.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/._ladda-themeless.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/._nuslider.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/._perfect-scrollbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/._pickadate" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/._quill.bubble.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/._quill.snow.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/._smart.wizard" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/._sweetalert2.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/._toastr.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/._toastr.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/.__attention-seekers" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/.__bouncing-entrances" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/.__bouncing-exits" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/.__fading-entrances" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/.__fading-exits" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/.__flippers" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/.__lightspeed" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/.__properties.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/.__rotating-entrances" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/.__rotating-exits" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/.__sliding-entrances" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/.__sliding-exits" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/.__specials" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/.__zooming-entrances" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/.__zooming-exits" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/._animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/._animate.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/._animate.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/._animate.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/._animate.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_attention-seekers/.__bounce.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_attention-seekers/.__flash.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_attention-seekers/.__jello.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_attention-seekers/.__pulse.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_attention-seekers/.__rubberBand.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_attention-seekers/.__shake.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_attention-seekers/.__swing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_attention-seekers/.__tada.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_attention-seekers/.__wobble.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_attention-seekers/._attention-seekers.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_attention-seekers/_bounce.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_attention-seekers/_flash.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_attention-seekers/_jello.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_attention-seekers/_pulse.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_attention-seekers/_rubberBand.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_attention-seekers/_shake.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_attention-seekers/_swing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_attention-seekers/_tada.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_attention-seekers/_wobble.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_attention-seekers/attention-seekers.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_bouncing-entrances/.__bounceIn.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_bouncing-entrances/.__bounceInDown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_bouncing-entrances/.__bounceInLeft.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_bouncing-entrances/.__bounceInRight.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_bouncing-entrances/.__bounceInUp.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_bouncing-entrances/._bouncing-entrances.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_bouncing-entrances/_bounceIn.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_bouncing-entrances/_bounceInDown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_bouncing-entrances/_bounceInLeft.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_bouncing-entrances/_bounceInRight.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_bouncing-entrances/_bounceInUp.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_bouncing-entrances/bouncing-entrances.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_bouncing-exits/.__bounceOut.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_bouncing-exits/.__bounceOutDown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_bouncing-exits/.__bounceOutLeft.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_bouncing-exits/.__bounceOutRight.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_bouncing-exits/.__bounceOutUp.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_bouncing-exits/._bouncing-exits.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_bouncing-exits/_bounceOut.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_bouncing-exits/_bounceOutDown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_bouncing-exits/_bounceOutLeft.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_bouncing-exits/_bounceOutRight.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_bouncing-exits/_bounceOutUp.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_bouncing-exits/bouncing-exits.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-entrances/.__fadeIn.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-entrances/.__fadeInDown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-entrances/.__fadeInDownBig.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-entrances/.__fadeInLeft.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-entrances/.__fadeInLeftBig.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-entrances/.__fadeInRight.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-entrances/.__fadeInRightBig.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-entrances/.__fadeInUp.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-entrances/.__fadeInUpBig.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-entrances/._fading-entrances.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-entrances/_fadeIn.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-entrances/_fadeInDown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-entrances/_fadeInDownBig.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-entrances/_fadeInLeft.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-entrances/_fadeInLeftBig.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-entrances/_fadeInRight.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-entrances/_fadeInRightBig.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-entrances/_fadeInUp.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-entrances/_fadeInUpBig.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-entrances/fading-entrances.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-exits/.__fadeOut.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-exits/.__fadeOutDown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-exits/.__fadeOutDownBig.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-exits/.__fadeOutLeft.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-exits/.__fadeOutLeftBig.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-exits/.__fadeOutRight.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-exits/.__fadeOutRightBig.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-exits/.__fadeOutUp.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-exits/.__fadeOutUpBig.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-exits/._fading-exits.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-exits/_fadeOut.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-exits/_fadeOutDown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-exits/_fadeOutDownBig.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-exits/_fadeOutLeft.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-exits/_fadeOutLeftBig.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-exits/_fadeOutRight.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-exits/_fadeOutRightBig.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-exits/_fadeOutUp.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-exits/_fadeOutUpBig.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_fading-exits/fading-exits.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_flippers/.__flip.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_flippers/.__flipInX.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_flippers/.__flipInY.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_flippers/.__flipOutX.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_flippers/.__flipOutY.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_flippers/._flippers.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_flippers/_flip.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_flippers/_flipInX.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_flippers/_flipInY.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_flippers/_flipOutX.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_flippers/_flipOutY.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_flippers/flippers.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_lightspeed/.__lightSpeedIn.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_lightspeed/.__lightSpeedOut.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_lightspeed/._lightspeed.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_lightspeed/_lightSpeedIn.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_lightspeed/_lightSpeedOut.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_lightspeed/lightspeed.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_properties.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_rotating-entrances/.__rotateIn.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_rotating-entrances/.__rotateInDownLeft.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_rotating-entrances/.__rotateInDownRight.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_rotating-entrances/.__rotateInUpLeft.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_rotating-entrances/.__rotateInUpRight.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_rotating-entrances/._rotating-entrances.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_rotating-entrances/_rotateIn.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_rotating-entrances/_rotateInDownLeft.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_rotating-entrances/_rotateInDownRight.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_rotating-entrances/_rotateInUpLeft.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_rotating-entrances/_rotateInUpRight.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_rotating-entrances/rotating-entrances.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_rotating-exits/.__rotateOut.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_rotating-exits/.__rotateOutDownLeft.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_rotating-exits/.__rotateOutDownRight.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_rotating-exits/.__rotateOutUpLeft.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_rotating-exits/.__rotateOutUpRight.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_rotating-exits/._rotating-exits.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_rotating-exits/_rotateOut.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_rotating-exits/_rotateOutDownLeft.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_rotating-exits/_rotateOutDownRight.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_rotating-exits/_rotateOutUpLeft.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_rotating-exits/_rotateOutUpRight.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_rotating-exits/rotating-exits.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_sliding-entrances/.__slideInDown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_sliding-entrances/.__slideInLeft.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_sliding-entrances/.__slideInRight.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_sliding-entrances/.__slideInUp.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_sliding-entrances/._sliding-entrances.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_sliding-entrances/_slideInDown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_sliding-entrances/_slideInLeft.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_sliding-entrances/_slideInRight.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_sliding-entrances/_slideInUp.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_sliding-entrances/sliding-entrances.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_sliding-exits/.__slideOutDown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_sliding-exits/.__slideOutLeft.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_sliding-exits/.__slideOutRight.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_sliding-exits/.__slideOutUp.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_sliding-exits/._sliding-exits.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_sliding-exits/_slideOutDown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_sliding-exits/_slideOutLeft.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_sliding-exits/_slideOutRight.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_sliding-exits/_slideOutUp.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_sliding-exits/sliding-exits.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_specials/.__hinge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_specials/.__rollIn.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_specials/.__rollOut.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_specials/._specials.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_specials/_hinge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_specials/_rollIn.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_specials/_rollOut.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_specials/specials.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_zooming-entrances/.__zoomIn.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_zooming-entrances/.__zoomInDown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_zooming-entrances/.__zoomInLeft.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_zooming-entrances/.__zoomInRight.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_zooming-entrances/.__zoomInUp.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_zooming-entrances/._zooming-entrances.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_zooming-entrances/_zoomIn.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_zooming-entrances/_zoomInDown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_zooming-entrances/_zoomInLeft.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_zooming-entrances/_zoomInRight.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_zooming-entrances/_zoomInUp.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_zooming-entrances/zooming-entrances.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_zooming-exits/.__zoomOut.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_zooming-exits/.__zoomOutDown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_zooming-exits/.__zoomOutLeft.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_zooming-exits/.__zoomOutRight.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_zooming-exits/.__zoomOutUp.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_zooming-exits/._zooming-exits.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_zooming-exits/_zoomOut.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_zooming-exits/_zoomOutDown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_zooming-exits/_zoomOutLeft.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_zooming-exits/_zoomOutRight.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_zooming-exits/_zoomOutUp.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/_zooming-exits/zooming-exits.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/animate.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/animate.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/animate.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/animate.scss/animate.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/._.DS_Store" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__alert.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__badge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__breadcrumb.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__button-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__card.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__carousel.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__close.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__code.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__custom-forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__dropdown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__functions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__images.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__input-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__jumbotron.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__list-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__media.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__modal.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__nav.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__navbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__popover.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__print.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__progress.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__reboot.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__root.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__tables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__tooltip.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__transitions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__type.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__utilities.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/.__variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/._bootstrap-grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/._bootstrap-reboot.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/._bootstrap.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/._mixins" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/._utilities" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_alert.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_badge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_breadcrumb.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_button-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_card.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_carousel.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_close.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_code.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_custom-forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_dropdown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_functions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_images.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_input-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_jumbotron.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_list-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_media.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_modal.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_nav.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_navbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_popover.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_print.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_progress.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_reboot.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_root.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_tables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_tooltip.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_transitions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_type.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_utilities.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/bootstrap-grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/bootstrap-reboot.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/bootstrap.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__alert.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__background-variant.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__badge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__border-radius.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__box-shadow.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__breakpoints.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__caret.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__clearfix.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__float.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__gradients.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__grid-framework.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__hover.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__image.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__list-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__lists.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__nav-divider.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__navbar-align.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__reset-text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__resize.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__size.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__table-row.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__text-emphasis.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__text-hide.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__text-truncate.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__transition.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/.__visibility.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_alert.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_background-variant.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_badge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_border-radius.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_box-shadow.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_breakpoints.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_caret.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_clearfix.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_float.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_gradients.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_grid-framework.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_hover.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_image.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_list-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_lists.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_nav-divider.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_navbar-align.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_reset-text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_resize.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_size.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_table-row.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_text-emphasis.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_text-hide.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_text-truncate.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_transition.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/mixins/_visibility.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/utilities/.__align.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/utilities/.__background.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/utilities/.__borders.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/utilities/.__clearfix.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/utilities/.__display.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/utilities/.__embed.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/utilities/.__flex.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/utilities/.__float.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/utilities/.__position.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/utilities/.__screenreaders.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/utilities/.__sizing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/utilities/.__spacing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/utilities/.__text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/utilities/.__visibility.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/utilities/_align.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/utilities/_background.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/utilities/_borders.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/utilities/_clearfix.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/utilities/_display.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/utilities/_embed.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/utilities/_flex.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/utilities/_float.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/utilities/_position.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/utilities/_screenreaders.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/utilities/_sizing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/utilities/_spacing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/utilities/_text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap-rtl/utilities/_visibility.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/.babelrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/.browserslistrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/.eslintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/.github/CONTRIBUTING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/.github/ISSUE_TEMPLATE/bug.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/.github/ISSUE_TEMPLATE/bug_report.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/.github/ISSUE_TEMPLATE/feature.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/.github/ISSUE_TEMPLATE/feature_request.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/.github/SUPPORT.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/.stylelintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/.stylelintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_alert.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_badge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_breadcrumb.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_button-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_card.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_carousel.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_close.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_code.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_custom-forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_dropdown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_functions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_images.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_input-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_jumbotron.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_list-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_media.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_modal.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_nav.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_navbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_popover.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_print.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_progress.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_reboot.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_root.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_tables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_toasts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_tooltip.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_transitions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_type.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_utilities.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/bootstrap-grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/bootstrap-reboot.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/bootstrap.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_alert.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_background-variant.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_badge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_border-radius.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_box-shadow.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_breakpoints.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_caret.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_clearfix.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_float.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_gradients.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_grid-framework.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_hover.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_image.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_list-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_lists.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_nav-divider.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_reset-text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_resize.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_size.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_table-row.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_text-emphasis.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_text-hide.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_text-truncate.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_transition.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/mixins/_visibility.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/utilities/_align.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/utilities/_background.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/utilities/_borders.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/utilities/_clearfix.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/utilities/_display.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/utilities/_embed.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/utilities/_flex.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/utilities/_float.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/utilities/_position.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/utilities/_screenreaders.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/utilities/_shadows.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/utilities/_sizing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/utilities/_spacing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/utilities/_text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/bootstrap/utilities/_visibility.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/calendar/._datepiker.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/calendar/._fullcalendar.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/calendar/._fullcalendar.print.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/calendar/datepiker.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/calendar/fullcalendar.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/calendar/fullcalendar.print.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/cropper.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/datatables.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/dropzone.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/hopscotch.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/ladda-themeless.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/nuslider.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/perfect-scrollbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/pickadate/._classic.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/pickadate/._classic.date.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/pickadate/._classic.time.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/pickadate/._default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/pickadate/._default.date.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/pickadate/._default.time.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/pickadate/._rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/pickadate/classic.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/pickadate/classic.date.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/pickadate/classic.time.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/pickadate/default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/pickadate/default.date.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/pickadate/default.time.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/pickadate/rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/quill.bubble.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/quill.snow.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/smart.wizard/._smart_wizard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/smart.wizard/._smart_wizard.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/smart.wizard/._smart_wizard_theme_arrows.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/smart.wizard/._smart_wizard_theme_arrows.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/smart.wizard/._smart_wizard_theme_circles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/smart.wizard/._smart_wizard_theme_circles.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/smart.wizard/._smart_wizard_theme_dots.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/smart.wizard/._smart_wizard_theme_dots.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/smart.wizard/smart_wizard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/smart.wizard/smart_wizard.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/smart.wizard/smart_wizard_theme_arrows.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/smart.wizard/smart_wizard_theme_arrows.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/smart.wizard/smart_wizard_theme_circles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/smart.wizard/smart_wizard_theme_circles.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/smart.wizard/smart_wizard_theme_dots.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/smart.wizard/smart_wizard_theme_dots.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/sweetalert2.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/toastr.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/assets/styles/vendor/toastr.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/frontend/src/app/app-routing/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/app/app-routing/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/app/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/frontend/src/app/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/app/header/header.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/app/page-title/page-title.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/app/page-title/page-title.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/app/page-title/page-title.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/app/page-title/page-title.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/app/hotel/hotel.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/app/hotel/hotel.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/app/hotel/hotel.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/app/hotel/hotel.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/app/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/app/services/auth.service.ts" afterDir="false" />
     </list>
     <ignored path=".idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -1159,55 +26,55 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Repositories/Room/RoomTypeRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
-              <folding>
-                <element signature="e#41#58#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Utilities/BookingUtility.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1190">
-              <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
-              <folding>
-                <element signature="e#34#84#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="80" column="49" selection-start-line="80" selection-start-column="49" selection-end-line="80" selection-end-column="49" />
+            <state relative-caret-position="306">
+              <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HotelController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="172" column="32" selection-start-line="172" selection-start-column="32" selection-end-line="172" selection-end-column="32" />
+            <state relative-caret-position="217">
+              <caret line="69" column="48" lean-forward="true" selection-start-line="69" selection-start-column="48" selection-end-line="69" selection-end-column="48" />
               <folding>
-                <element signature="e#40#85#0#PHP" expanded="true" />
+                <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
+        <entry file="file://$PROJECT_DIR$/app/Repositories/HotelRepositoryInterface.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="255">
+              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Repositories/HotelRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="444">
+              <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
+              <folding>
+                <element signature="e#35#49#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="176" column="30" selection-start-line="176" selection-start-column="30" selection-end-line="176" selection-end-column="30" />
+              <folding>
+                <element signature="e#40#85#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1296,7 +163,6 @@
         <option value="$PROJECT_DIR$/app/Hotel.php" />
         <option value="$PROJECT_DIR$/app/RoomType.php" />
         <option value="$PROJECT_DIR$/app/Repositories/RoomTypeRespositoryInterface.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/HotelRepositoryInterface.php" />
         <option value="$PROJECT_DIR$/app/Repositories/RoomTypeRepositoryInterface.php" />
         <option value="$PROJECT_DIR$/app/Repositories/RoomTypeRepository.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/RoomTypeController.php" />
@@ -1315,10 +181,8 @@
         <option value="$PROJECT_DIR$/app/Repositories/PriceRepository.php" />
         <option value="$PROJECT_DIR$/app/Repositories/UserRepository.php" />
         <option value="$PROJECT_DIR$/app/Repositories/Room/RoomTypeRepository.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/HotelRepository.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Room/RoomController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Room/RoomTypeController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/HotelController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PriceController.php" />
         <option value="$PROJECT_DIR$/app/Book.php" />
         <option value="$PROJECT_DIR$/app/Repositories/Room/RoomRepositoryInterface.php" />
@@ -1336,8 +200,11 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
         <option value="$PROJECT_DIR$/readme.md" />
-        <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/HotelRepositoryInterface.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/HotelRepository.php" />
+        <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HotelController.php" />
       </list>
     </option>
   </component>
@@ -1613,7 +480,7 @@
       <workItem from="1561893173179" duration="7548000" />
       <workItem from="1561994669571" duration="3520000" />
       <workItem from="1562090112615" duration="1829000" />
-      <workItem from="1562141529039" duration="951000" />
+      <workItem from="1562141529039" duration="7244000" />
     </task>
     <task id="LOCAL-00001" summary="created database migrations">
       <created>1561552348565</created>
@@ -1776,15 +643,28 @@
       <option name="project" value="LOCAL" />
       <updated>1561996219233</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Added get User endpoint">
+      <created>1562142539848</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1562142539848</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Added get All hotel  endpoint">
+      <created>1562144166744</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1562144166744</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99563000" />
+    <option name="totallyTimeSpent" value="105856000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2685325" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1877,7 +757,8 @@
     <MESSAGE value="Added filter bookings endpoint" />
     <MESSAGE value="Frontend setup and updated readme" />
     <MESSAGE value="Added get User endpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added get User endpoint" />
+    <MESSAGE value="Added get All hotel  endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added get All hotel  endpoint" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php">
@@ -1990,13 +871,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/HotelRepositoryInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/RoomType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -2008,16 +882,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-11645">
           <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/HotelRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="55" column="38" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
-          <folding>
-            <element signature="e#35#49#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2052,16 +916,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="17" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HotelController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="44" column="11" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2256,19 +1110,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="80" column="49" selection-start-line="80" selection-start-column="49" selection-end-line="80" selection-end-column="49" />
+        <state relative-caret-position="427">
+          <caret line="176" column="30" selection-start-line="176" selection-start-column="30" selection-end-line="176" selection-end-column="30" />
+          <folding>
+            <element signature="e#40#85#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php">
+    <entry file="file://$PROJECT_DIR$/app/Repositories/HotelRepositoryInterface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="172" column="32" selection-start-line="172" selection-start-column="32" selection-end-line="172" selection-end-column="32" />
+        <state relative-caret-position="255">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/HotelRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
           <folding>
-            <element signature="e#40#85#0#PHP" expanded="true" />
+            <element signature="e#35#49#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HotelController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="69" column="48" lean-forward="true" selection-start-line="69" selection-start-column="48" selection-end-line="69" selection-end-column="48" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

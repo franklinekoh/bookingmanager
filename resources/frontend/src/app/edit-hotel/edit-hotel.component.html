@@ -1,0 +1,68 @@
+<app-header></app-header>
+<!-- ============ Body content start ============= -->
+<div class="main-content-wrap sidenav-open d-flex flex-column">
+
+
+  <app-page-title [heading]="heading"></app-page-title>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card mb-4">
+        <div class="card-header">
+          <button class="btn btn-warning text-right float-right" (click)="goBack()" type="button" aria-haspopup="true" aria-expanded="false">
+            go back <i class="nav-icon i-Arrow-Left"></i>
+          </button>
+        </div>
+        <div class="card-body">
+          <div class="card-title mb-3">Edit {{hotelName}}'s Hotel</div>
+  <form [formGroup]="editForm" (submit)="submitEditForm()">
+    <div class="row">
+      <div class="col-md-4 form-group mb-3">
+        <label>Name</label>
+        <input type="text" class="form-control" formControlName="name">
+      </div>
+      <div class="col-md-4 form-group mb-3">
+        <label>Address</label>
+        <input type="text" class="form-control" formControlName="address">
+      </div>
+      <div class="col-md-4 form-group mb-3">
+        <label>City</label>
+        <input type="text" class="form-control" formControlName="city">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 form-group mb-3">
+        <label>State</label>
+        <input type="text" class="form-control" formControlName="state">
+      </div>
+      <div class="col-md-4 form-group mb-3">
+        <label>Country</label>
+        <input type="text" class="form-control" formControlName="country">
+      </div>
+      <div class="col-md-4 form-group mb-3">
+        <label>Zip Code</label>
+        <input type="text" class="form-control" formControlName="zipcode" >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 form-group mb-3">
+        <label>Phone</label>
+        <input type="text" class="form-control" formControlName="phone">
+      </div>
+      <div class="col-md-4 form-group mb-3">
+        <label>Email</label>
+        <input type="text" class="form-control" formControlName="email" >
+      </div>
+<!--      <div class="col-md-4 form-group mb-3">-->
+<!--        <label>Image (uploading a new image will delete old image)</label>-->
+<!--        <input type="file" formControlName="imageFile" >-->
+<!--      </div>-->
+    </div>
+    <div class="col-md-12 float-right">
+      <button class="btn btn-primary" [disabled]="!editForm.valid">Submit</button>
+    </div>
+  </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -14,6 +14,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { JwtModule } from '@auth0/angular-jwt';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HotelDetailsComponent } from './hotel-details/hotel-details.component';
+import { EditHotelComponent } from './edit-hotel/edit-hotel.component';
 
 export function tokenGetter() {
   return localStorage.getItem('authToken');
@@ -27,7 +29,9 @@ export function tokenGetter() {
     PageTitleComponent,
     HotelComponent,
     LoginComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    HotelDetailsComponent,
+    EditHotelComponent
   ],
   imports: [
     BrowserModule,

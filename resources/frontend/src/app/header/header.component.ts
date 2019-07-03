@@ -32,8 +32,6 @@ export class HeaderComponent implements OnInit {
       i.on("click",function(e){gullUtils.isMobile()&&l(),c()}),e.on("click",function(e){var i=a.hasClass("open"),
       t=n.hasClass("open"),s=$(".nav-item.active").data("item");i&&t&&gullUtils.isMobile()?(l(),
       c()):i&&t?c():i?l():i||t||s?i||t||(o(),d()):o()})});
-
-    console.log(this.getUserName());
   }
   logOut() {
     this.authService.logout();
@@ -43,5 +41,6 @@ export class HeaderComponent implements OnInit {
   getUserName() {
     return JSON.parse(localStorage.getItem('currentUser')).fullname;
   }
+
 
 }
