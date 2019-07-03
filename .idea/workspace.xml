@@ -38,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PriceController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="444">
-              <caret line="102" column="43" lean-forward="true" selection-start-line="102" selection-start-column="43" selection-end-line="102" selection-end-column="43" />
+              <caret line="102" column="43" selection-start-line="102" selection-start-column="43" selection-end-line="102" selection-end-column="43" />
               <folding>
                 <element signature="e#40#86#0#PHP" expanded="true" />
               </folding>
@@ -482,7 +482,7 @@
       <workItem from="1561893173179" duration="7548000" />
       <workItem from="1561994669571" duration="3520000" />
       <workItem from="1562090112615" duration="1829000" />
-      <workItem from="1562141529039" duration="22863000" />
+      <workItem from="1562141529039" duration="23225000" />
     </task>
     <task id="LOCAL-00001" summary="created database migrations">
       <created>1561552348565</created>
@@ -663,7 +663,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121475000" />
+    <option name="totallyTimeSpent" value="121837000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1146,7 +1146,7 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PriceController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="444">
-          <caret line="102" column="43" lean-forward="true" selection-start-line="102" selection-start-column="43" selection-end-line="102" selection-end-column="43" />
+          <caret line="102" column="43" selection-start-line="102" selection-start-column="43" selection-end-line="102" selection-end-column="43" />
           <folding>
             <element signature="e#40#86#0#PHP" expanded="true" />
           </folding>
