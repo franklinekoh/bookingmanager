@@ -5,11 +5,12 @@ import { AuthGaurdService as AuthGuard } from '../services/auth-gaurd.service';
 
 import { LoginComponent } from '../login/login.component';
 import { PageNotFoundComponent } from '../page-not-found/page-not-found.component';
-import { HotelComponent } from '../hotel/hotel.component';
-import { HotelDetailsComponent} from '../hotel-details/hotel-details.component';
-import { EditHotelComponent } from '../edit-hotel/edit-hotel.component';
+import { HotelComponent } from '../hotel-components/hotel/hotel.component';
+import { HotelDetailsComponent} from '../hotel-components/hotel-details/hotel-details.component';
+import { EditHotelComponent } from '../hotel-components/edit-hotel/edit-hotel.component';
 import { PricesComponent } from '../price/prices/prices.component';
 import { CreatePriceComponent} from '../price/create-price/create-price.component';
+import { ViewPriceComponent } from '../price/view-price/view-price.component';
 
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'hotel/edit/:id', component: EditHotelComponent, canActivate: [AuthGuard]},
   { path: 'price', component: PricesComponent, canActivate: [AuthGuard]},
   { path: 'price/create', component: CreatePriceComponent, canActivate: [AuthGuard]},
+  { path: 'price/:id', component: ViewPriceComponent, canActivate: [AuthGuard]},
   { path: '', redirectTo: 'hotel', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent},
 

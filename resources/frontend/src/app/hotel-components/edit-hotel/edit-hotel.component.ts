@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import {ToastrService} from 'ngx-toastr';
 import {ActivatedRoute, Router} from '@angular/router';
-import {HotelService} from '../services/hotel.service';
+import {HotelService} from '../../services/hotel.service';
 import { Location } from '@angular/common';
 
 @Component({

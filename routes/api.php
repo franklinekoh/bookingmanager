@@ -65,9 +65,11 @@ Route::prefix('price')->group(function () {
 
     Route::post('/', 'PriceController@createPrice');
 
+    Route::get('/{priceID}', 'PriceController@getPriceByID');
+
     Route::put('/', 'PriceController@editPrice');
 
-    Route::delete('/', 'PriceController@deletePrice');
+    Route::delete('/{priceID}', 'PriceController@deletePrice');
 });
 
 /**

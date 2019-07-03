@@ -14,6 +14,12 @@ interface PriceRepositoryInterface
     public function get();
 
     /**
+     * Gets price by it's ID
+     */
+
+    public function getPriceByID($priceID);
+
+    /**
      * Stores a price
      *
      * @param array $data

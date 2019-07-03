@@ -22,11 +22,37 @@ class PriceRepository implements PriceRepositoryInterface
         try{
             return Price::join('room_type', 'prices.room_type_id', '=', 'room_type.id')
                 ->get([
+                    'prices.id',
                     'amount',
                     'currency',
                     'type_name as room_type',
                     'prices.created_at'
                 ])->sortBy('prices.created_at');
+        }catch (QueryException $ex){
+            return $ex->getMessage();
+        }
+
+
+    }
+
+    /**
+     * Gets price by ID
+     *
+     * @return \Illuminate\Database\Eloquent\Collection|string
+     */
+
+    public function getPriceByID($priceID){
+
+        try{
+            return Price::where('prices.id', $priceID)
+              ->join('room_type', 'prices.room_type_id', '=', 'room_type.id')
+                ->first([
+                    'prices.id',
+                    'amount',
+                    'currency',
+                    'type_name as room_type',
+                    'prices.created_at'
+                ]);
         }catch (QueryException $ex){
             return $ex->getMessage();
         }

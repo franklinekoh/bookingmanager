@@ -118,12 +118,15 @@ class PriceController extends Controller
     /**
      * delete price for a room
      *
-     * @param Request $request
+     * @param $priceID
      * @return \Illuminate\Http\JsonResponse
      */
-    public function deletePrice(Request $request){
+    public function deletePrice($priceID){
 
-        $validator = Validator::make($request->all(),
+        $request = [
+            'priceID' => $priceID
+        ];
+        $validator = Validator::make($request,
             [
                 'priceID' => 'required|numeric|exists:prices,id'
             ]);
@@ -135,7 +138,7 @@ class PriceController extends Controller
             ]);
         }
 
-        $this->price->delete($request->input('priceID'));
+        $this->price->delete($request['priceID']);
 
         return response()->json([
             'status' => true,
