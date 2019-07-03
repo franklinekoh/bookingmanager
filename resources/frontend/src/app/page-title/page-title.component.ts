@@ -11,9 +11,5 @@ export class PageTitleComponent implements OnInit {
 
   ngOnInit() {
   }
-
   @Input() heading;
-  @Input() previous;
-  @Input() current;
-  @Input() link;
 }

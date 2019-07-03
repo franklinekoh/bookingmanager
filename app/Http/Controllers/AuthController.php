@@ -168,4 +168,16 @@ class AuthController extends Controller
             'expires_in' => auth()->factory()->getTTL() * 60
         ]);
     }
+
+    /**
+     * Get current loggedIn user
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function getUser(){
+        return response()->json([
+            'status' => true,
+            'message' => null,
+            'data' => auth()->user()
+        ]);
+    }
 }
