@@ -52,10 +52,10 @@
         <label>Email</label>
         <input type="text" class="form-control" formControlName="email" >
       </div>
-<!--      <div class="col-md-4 form-group mb-3">-->
-<!--        <label>Image (uploading a new image will delete old image)</label>-->
-<!--        <input type="file" formControlName="imageFile" >-->
-<!--      </div>-->
+      <div class="col-md-4 form-group mb-3">
+        <label>Image (uploading a new image will delete old image)</label>
+        <input type="file" formControlName="imageFile" (change)="onFileSelected($event)">
+      </div>
     </div>
     <div class="col-md-12 float-right">
       <button class="btn btn-primary" [disabled]="!editForm.valid">Submit</button>

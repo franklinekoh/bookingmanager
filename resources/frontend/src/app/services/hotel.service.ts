@@ -45,13 +45,13 @@ export class HotelService {
   }
   editHotel(body: any) {
 
-    const httpOptions: any = {
-      headers: new HttpHeaders({
-        'content-type': 'application/json'
-      })
-    };
+    // const httpOptions: any = {
+    //   headers: new HttpHeaders({
+    //     'content-type': 'application/json'
+    //   })
+    // };
 
-    return this.http.put(`${environment.apiUrl}hotel`, body, httpOptions).pipe(
+    return this.http.post(`${environment.apiUrl}hotel`, body).pipe(
       tap((data: any) => {
       }),
       catchError(err => {

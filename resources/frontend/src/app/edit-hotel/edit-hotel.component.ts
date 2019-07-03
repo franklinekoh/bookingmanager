@@ -28,12 +28,13 @@ export class EditHotelComponent implements OnInit {
       'zipcode': [''],
       'phone': [''],
       'email': ['', Validators.email],
-      // 'imageFile': ['']
+      'imageFile': [''],
     });
   }
   heading = 'Edit Hotel';
   editForm: any;
   hotelName: string;
+  selectedFile: File = null;
 
   ngOnInit() {
     this.getHotel();
@@ -59,16 +60,27 @@ export class EditHotelComponent implements OnInit {
     });
   }
 
+  onFileSelected(event) {
+    this.selectedFile = <File>event.target.files[0];
+  }
 
 
   submitEditForm() {
     if (this.editForm.valid) {
       const id = +this.route.snapshot.paramMap.get('id');
-      const data = this.editForm.value
-      const body = {
-        'hotelID': id,
-        'data': data
-      };
+      const body = new FormData();
+      if (this.selectedFile !== null) {
+        body.append('image', this.selectedFile, this.selectedFile.name);
+      }
+      body.append('hotelID', `${id}`);
+      body.append('name', this.editForm.value.name);
+      body.append('address', this.editForm.value.address);
+      body.append('city', this.editForm.value.city);
+      body.append('state', this.editForm.value.state);
+      body.append('country', this.editForm.value.country);
+      body.append('zipcode', this.editForm.value.zipcode);
+      body.append('phone', this.editForm.value.phone);
+      body.append('email', this.editForm.value.email);
       this.hotelService.editHotel(body).subscribe(data => {
         console.log(data);
         if (data.status === true) {

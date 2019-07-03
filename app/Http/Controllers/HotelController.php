@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Validator;
 
 use App\Repositories\HotelRepositoryInterface;
+use App\Utilities\ImageUtility;
+use File;
 
 class HotelController extends Controller
 {
@@ -72,7 +74,8 @@ class HotelController extends Controller
         $validator = Validator::make($request->all(),
             [
                 'hotelID' => 'required|numeric|exists:hotels,id',
-                'data' => 'required'
+                'email' => 'email',
+                'photo' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048'
             ]);
 
         if($validator->fails()){
@@ -82,8 +85,51 @@ class HotelController extends Controller
             ]);
         }
 
-         $updated = $this->hotel->update($request->input('hotelID'), $request->input('data'));
-        if (gettype($updated) != 'integer')
+        $data = $request->all();
+        $body = [];
+
+        if (array_key_exists('name', $data))
+            $body['name'] = $data['name'];
+
+        if (array_key_exists('address', $data))
+            $body['address'] = $data['address'];
+
+        if (array_key_exists('city', $data))
+            $body['city'] = $data['city'];
+
+        if (array_key_exists('state', $data))
+            $body['state'] = $data['state'];
+
+        if (array_key_exists('zipcode', $data))
+            $body['zipcode'] = $data['zipcode'];
+
+        if (array_key_exists('country', $data))
+            $body['country'] = $data['country'];
+
+        if (array_key_exists('image', $data)){
+            $imageDestination = 'uploads/hotel';
+            $imageUtility = new ImageUtility($data['image'], $imageDestination);
+
+            $uploaded = $imageUtility->uploadPhoto();
+
+            if(!$uploaded){
+                return response()->json([
+                    'status' => false,
+                    'message' => 'Image data not uploaded successfully'
+                ]);
+            }
+
+            $body['image_path'] = $uploaded;
+
+            $currentImage = $this->hotel->get($request->input('hotelID'))->image_path;
+            if(File::exists(public_path($currentImage)))
+                unlink(public_path($currentImage));
+
+        }
+
+
+         $updated = $this->hotel->update($request->input('hotelID'), $body);
+        if (!is_int($updated))
             return response()->json([
                 'status' => false,
                 'message' => $updated,
