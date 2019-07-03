@@ -25,6 +25,23 @@ class HotelRepository implements HotelRepositoryInterface
     }
 
     /**
+     * Gets a Hotel by it's ID
+     *
+     * @param int
+     * @return \Illuminate\Database\Eloquent\Collection|string
+     */
+
+    public function getAllHotel()
+    {
+        try{
+            return Hotel::all()->sortBy('created_at');
+        }catch (QueryException $ex){
+            return $ex->getMessage();
+        }
+
+    }
+
+    /**
      * Stores a hotel
      *
      * @param array

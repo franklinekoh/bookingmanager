@@ -3,7 +3,6 @@ import { environment} from '../../environments/environment';
 import { HttpClient, HttpHeaders,  } from '@angular/common/http';
 import { catchError, map, tap } from 'rxjs/operators';
 import { Observable, of, throwError} from 'rxjs';
-import { ApiResponse} from '../types/api-response';
 import {JwtHelperService} from '@auth0/angular-jwt';
 
 @Injectable({
@@ -25,12 +24,7 @@ export class AuthService {
 
         if (data.access_token) {
           localStorage.setItem('authToken', data.access_token);
-          const access_token: string = 'Bearer ' + data.access_token;
-          this.getUser(access_token).subscribe((data: any) => {
-            console.log(data);
-            localStorage.setItem('currentUser', JSON.stringify(data.data));
-
-          });
+          localStorage.setItem('currentUser', JSON.stringify(data.user));
         }
       return data;
       }),
@@ -42,32 +36,8 @@ export class AuthService {
 }
 
   logout() {
-    // remove user from local storage to log user out
     localStorage.removeItem('currentUser');
     localStorage.removeItem('authToken');
-  }
-
-  isLoggedIn() {
-    return JSON.parse(localStorage.getItem('currentUser') || 'false');
-  }
-
-  getUser(authToken: string): Observable<ArrayBuffer> {
-
-    const httpOptions: any = {
-      headers: new HttpHeaders({
-        'Authorization': authToken
-      })
-    }
-
-    return this.http.get(environment.apiUrl + 'auth/user', httpOptions).pipe(
-      tap((data) => {
-          return data;
-      }),
-      catchError(err => {
-
-        return throwError(err);
-      })
-    );
   }
 
   public isAuthenticated(): boolean {

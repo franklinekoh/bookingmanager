@@ -96,4 +96,19 @@ class HotelController extends Controller
            'data' => null
        ]);
     }
+
+    /**
+     * Get All hotels
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function getAllHotels(){
+
+        $data = $this->hotel->getAllHotel();
+        return response()->json([
+            'status' => true,
+            'message' => null,
+            'data' => $data
+        ]);
+    }
 }

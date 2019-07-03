@@ -24,6 +24,8 @@ Route::prefix('hotel')->group(function () {
 
     Route::get('/{hotelID}', 'HotelController@getHotel');
 
+    Route::get('/', 'HotelController@getAllHotels');
+
     Route::put('/', 'HotelController@editHotel');
 });
 

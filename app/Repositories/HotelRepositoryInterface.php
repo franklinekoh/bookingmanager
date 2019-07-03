@@ -13,6 +13,13 @@ interface HotelRepositoryInterface
     public function get($hotelID);
 
     /**
+     * Gets all Hotel
+
+     */
+
+    public function getAllHotel();
+
+    /**
      * Stores a hotel
      *
      * @param array $data
