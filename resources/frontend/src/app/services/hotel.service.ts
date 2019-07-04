@@ -44,13 +44,6 @@ export class HotelService {
     );
   }
   editHotel(body: any) {
-
-    // const httpOptions: any = {
-    //   headers: new HttpHeaders({
-    //     'content-type': 'application/json'
-    //   })
-    // };
-
     return this.http.post(`${environment.apiUrl}hotel`, body).pipe(
       tap((data: any) => {
       }),

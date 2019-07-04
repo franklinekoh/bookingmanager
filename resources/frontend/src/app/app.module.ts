@@ -28,6 +28,9 @@ import { RoomsComponent } from './room/rooms/rooms.component';
 import { CreateRoomComponent } from './room/create-room/create-room.component';
 import { ViewRoomComponent } from './room/view-room/view-room.component';
 import { EditRoomComponent } from './room/edit-room/edit-room.component';
+import { BookingsComponent } from './booking/bookings/bookings.component';
+import { CreateBookingComponent } from './booking/create-booking/create-booking.component';
+import { ViewBookingComponent } from './booking/view-booking/view-booking.component';
 
 export function tokenGetter() {
   return localStorage.getItem('authToken');
@@ -55,7 +58,10 @@ export function tokenGetter() {
     RoomsComponent,
     CreateRoomComponent,
     ViewRoomComponent,
-    EditRoomComponent
+    EditRoomComponent,
+    BookingsComponent,
+    CreateBookingComponent,
+    ViewBookingComponent
   ],
   imports: [
     BrowserModule,

@@ -29,6 +29,23 @@ export class RoomService {
     );
   }
 
+  getAvailableRooms() {
+    const httpOptions: any = {
+      headers: new HttpHeaders({
+        'content-type': 'application/json'
+      })
+    };
+
+    return this.http.get(environment.apiUrl + 'room/get/available', httpOptions).pipe(
+      tap((data: any) => {
+      }),
+      catchError(err => {
+
+        return throwError(err);
+      })
+    );
+  }
+
   createRoom(body: any) {
     return this.http.post(environment.apiUrl + 'room', body).pipe(
       tap((data: any) => {
