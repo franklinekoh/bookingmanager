@@ -35,7 +35,7 @@ class HotelsTableSeeder extends Seeder
 
         $faker = Faker::create();
         $this->hotel->store([
-            'name' => $faker->name,
+            'name' => $faker->company,
             'address' => $faker->address,
             'city' => $faker->city,
             'country' => $faker->country,
