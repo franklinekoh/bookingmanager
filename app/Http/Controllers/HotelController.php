@@ -107,23 +107,8 @@ class HotelController extends Controller
             $body['country'] = $data['country'];
 
         if (array_key_exists('image', $data)){
-            $imageDestination = 'uploads/hotel';
-            $imageUtility = new ImageUtility($data['image'], $imageDestination);
 
-            $uploaded = $imageUtility->uploadPhoto();
 
-            if(!$uploaded){
-                return response()->json([
-                    'status' => false,
-                    'message' => 'Image data not uploaded successfully'
-                ]);
-            }
-
-            $body['image_path'] = $uploaded;
-
-            $currentImage = $this->hotel->get($request->input('hotelID'))->image_path;
-            if(File::exists(public_path($currentImage)))
-                unlink(public_path($currentImage));
 
         }
 

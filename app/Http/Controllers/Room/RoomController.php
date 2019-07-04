@@ -8,6 +8,7 @@ use App\Room;
 use Illuminate\Http\Request;
 use Validator;
 use App\Utilities\ImageUtility;
+use File;
 
 class RoomController extends Controller
 {
@@ -161,7 +162,39 @@ class RoomController extends Controller
             ]);
         }
 
-       $updated = $this->room->update($request->input('roomID'), $request->input('data'));
+        $data = [];
+        if(array_key_exists('room_name', $request->all()))
+            $data['room_name'] = $request->input('room_name');
+
+        if(array_key_exists('hotel_id', $request->all()))
+            $data['hotel_id'] = $request->input('hotel_id');
+
+        if(array_key_exists('room_type_id', $request->all()))
+            $data['room_type_id'] = $request->input('room_type_id');
+
+        if(array_key_exists('image', $request->all())){
+
+            $imageDestination = 'uploads/hotel';
+            $imageUtility = new ImageUtility($request['image'], $imageDestination);
+
+            $uploaded = $imageUtility->uploadPhoto();
+
+            if(!$uploaded){
+                return response()->json([
+                    'status' => false,
+                    'message' => 'Image data not uploaded successfully'
+                ]);
+            }
+
+            $data['room_image_path'] = $uploaded;
+
+            $currentImage = $this->room->getRoomByID($request->input('roomID'))->room_image_path;
+            if(File::exists(public_path($currentImage)))
+                unlink(public_path($currentImage));
+        }
+
+
+       $updated = $this->room->update($request->input('roomID'), $data);
 
         if (gettype($updated) != 'integer')
             return response()->json([
@@ -180,13 +213,16 @@ class RoomController extends Controller
     /**
      * Delete room
      *
-     * @param Request $request
+     * @param $roomID
      * @return \Illuminate\Http\JsonResponse
      */
 
-    public function deleteRoom(Request $request){
+    public function deleteRoom($roomID){
 
-        $validator = Validator::make($request->all(),
+        $request = [
+            'roomID' => $roomID
+        ];
+        $validator = Validator::make($request,
             [
                 'roomID' => 'required|exists:rooms,id',
             ]);
@@ -198,7 +234,7 @@ class RoomController extends Controller
             ]);
         }
 
-        $this->room->delete($request->input('roomID'));
+        $this->room->delete($request['roomID']);
 
         return response()->json([
             'status' => true,

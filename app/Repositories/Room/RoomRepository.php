@@ -72,7 +72,8 @@ class RoomRepository implements RoomRepositoryInterface
                     'email',
                     'image_path as hotel_image_path',
                     'amount',
-                    'currency']);
+                    'currency',
+                    'room_image_path']);
         }catch (QueryException $ex){
             return $ex->getMessage();
         }
@@ -152,7 +153,7 @@ class RoomRepository implements RoomRepositoryInterface
      */
     public function update($roomID, array $data){
         try{
-            Room::where('id', $roomID)->update($data);
+           return Room::where('id', $roomID)->update($data);
         }catch (QueryException $ex){
             return $ex->getMessage();
         }
@@ -166,7 +167,7 @@ class RoomRepository implements RoomRepositoryInterface
      */
     public function delete($roomID){
         try{
-
+            return Room::destroy($roomID);
         }catch (QueryException $ex){
             return $ex->getMessage();
         }
