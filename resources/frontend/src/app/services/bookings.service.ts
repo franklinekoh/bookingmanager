@@ -81,6 +81,24 @@ export class BookingsService {
     );
   }
 
+  updateBooking(body: any) {
+
+    const httpOptions: any = {
+      headers: new HttpHeaders({
+        'content-type': 'application/json',
+        'Authorization': localStorage.getItem('authToken')
+      })
+    };
+
+    return this.http.put(`${environment.apiUrl}bookings`, body, httpOptions).pipe(
+      tap((data: any) => {
+      }),
+      catchError(err => {
+        return throwError(err);
+      })
+    );
+  }
+
   createBooking(body: any) {
 
     const httpOptions: any = {

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { RoomService} from '../../services/room.service';
 import {FormBuilder, Validators} from '@angular/forms';
 import {ToastrService} from 'ngx-toastr';
-import {ActivatedRoute, Router} from '@angular/router';
 import {Location} from '@angular/common';
 import {BookingsService} from '../../services/bookings.service';
 
