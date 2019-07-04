@@ -16,6 +16,8 @@ import { RoomTypesComponent } from '../room/room-types/room-types.component';
 import { RoomTypesCreateComponent } from '../room/room-types-create/room-types-create.component';
 import { ViewRoomTypeComponent } from '../room/view-room-type/view-room-type.component';
 import { EditRoomTypeComponent } from '../room/edit-room-type/edit-room-type.component';
+import { RoomsComponent} from '../room/rooms/rooms.component';
+import { CreateRoomComponent } from '../room/create-room/create-room.component';
 
 
 const routes: Routes = [
@@ -27,6 +29,8 @@ const routes: Routes = [
   { path: 'price/create', component: CreatePriceComponent, canActivate: [AuthGuard]},
   { path: 'price/:id', component: ViewPriceComponent, canActivate: [AuthGuard]},
   { path: 'price/edit/:id', component: EditPriceComponent, canActivate: [AuthGuard]},
+  { path: 'room', component: RoomsComponent, canActivate: [AuthGuard]},
+  { path: 'room/create', component: CreateRoomComponent, canActivate: [AuthGuard]},
   { path: 'room/type', component: RoomTypesComponent, canActivate: [AuthGuard]},
   { path: 'room/type/create', component: RoomTypesCreateComponent, canActivate: [AuthGuard]},
   { path: 'room/type/:id', component: ViewRoomTypeComponent, canActivate: [AuthGuard]},

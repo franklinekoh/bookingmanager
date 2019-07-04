@@ -19,6 +19,14 @@ export class EditHotelComponent implements OnInit {
               private route: ActivatedRoute,
               private location: Location
               ) {
+  }
+  heading = 'Edit Hotel';
+  editForm: any;
+  hotelName: string;
+  selectedFile: File = null;
+
+  ngOnInit() {
+    this.getHotel();
     this.editForm = this.formBuilder.group({
       'name': [''],
       'address': [''],
@@ -30,14 +38,6 @@ export class EditHotelComponent implements OnInit {
       'email': ['', Validators.email],
       'imageFile': [''],
     });
-  }
-  heading = 'Edit Hotel';
-  editForm: any;
-  hotelName: string;
-  selectedFile: File = null;
-
-  ngOnInit() {
-    this.getHotel();
   }
 
   getHotel() {

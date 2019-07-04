@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
+import {ToastrService} from 'ngx-toastr';
+import {RoomService} from '../../services/room.service';
 
 @Component({
   selector: 'app-rooms',
@@ -7,9 +10,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RoomsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router,
+              private toastr: ToastrService,
+              private roomService: RoomService
+              ) { }
 
+  heading = 'Rooms';
+  roomData: any[];
   ngOnInit() {
+    this.getRooms();
   }
 
+  getRooms() {
+    this.roomService.getRooms().subscribe(data => {
+      this.roomData = data.data;
+    }, error => {
+      console.log(error);
+    });
+  }
 }

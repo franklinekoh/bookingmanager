@@ -25,6 +25,8 @@ import { RoomTypesCreateComponent } from './room/room-types-create/room-types-cr
 import { EditRoomTypeComponent } from './room/edit-room-type/edit-room-type.component';
 import { ViewRoomTypeComponent } from './room/view-room-type/view-room-type.component';
 import { RoomsComponent } from './room/rooms/rooms.component';
+import { CreateRoomComponent } from './room/create-room/create-room.component';
+import { ViewRoomComponent } from './room/view-room/view-room.component';
 
 export function tokenGetter() {
   return localStorage.getItem('authToken');
@@ -49,7 +51,9 @@ export function tokenGetter() {
     RoomTypesCreateComponent,
     EditRoomTypeComponent,
     ViewRoomTypeComponent,
-    RoomsComponent
+    RoomsComponent,
+    CreateRoomComponent,
+    ViewRoomComponent
   ],
   imports: [
     BrowserModule,
