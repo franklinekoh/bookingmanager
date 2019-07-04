@@ -1,0 +1,58 @@
+<app-header></app-header>
+<!-- ============ Body content start ============= -->
+<div class="main-content-wrap sidenav-open d-flex flex-column">
+
+
+  <app-page-title [heading]="heading"></app-page-title>
+
+  <div class="card user-profile o-hidden mb-4">
+    <div class="user-info">
+      <p class="m-0 text-24" style="padding-top: 50px;">{{bookingData?.hotel_name}} -> {{bookingData?.room_name}}</p>
+    </div>
+    <div class="card-header">
+      <button class="btn btn-warning text-right float-right" (click)="goBack()" type="button" aria-haspopup="true" aria-expanded="false">
+        go back <i class="nav-icon i-Arrow-Left"></i>
+      </button>
+    </div>
+    <div class="card-body">
+
+      <div class="row">
+        <div class="col-md-4 col-6">
+          <div class="mb-4">
+            <p class="text-primary mb-1"><i class="i-Home1 text-16 mr-1"></i>Hotel Name</p>
+            <span>{{bookingData?.hotel_name}}</span>
+          </div>
+          <div class="mb-4">
+            <p class="text-primary mb-1"><i class="i-Globe text-16 mr-1"></i>Hotel Address</p>
+            <span>{{bookingData?.hotel_address}}</span>
+          </div>
+          <div class="mb-4">
+            <p class="text-primary mb-1"><i class="i-Geo21 text-16 mr-1"></i>Room Name</p>
+            <span>{{bookingData?.room_name}}</span>
+          </div>
+        </div>
+        <div class="col-md-4 col-6">
+          <div class="mb-4">
+            <p class="text-primary mb-1"><i class="i-Window-2 text-16 mr-1"></i>Room Type</p>
+            <span>{{bookingData?.room_type}}</span>
+          </div>
+          <div class="mb-4">
+            <p class="text-primary mb-1"><i class="i-Globe text-16 mr-1"></i>Total Nights</p>
+            <span>{{bookingData?.total_nights}}</span>
+          </div>
+          <div class="mb-4">
+            <p class="text-primary mb-1"><i class="i-Geo2- text-16 mr-1"></i> Amount</p>
+            <span>{{bookingData?.total_price}} {{bookingData?.currency}}</span>
+          </div>
+        </div>
+        <div class="col-md-4 col-6">
+          <div class="mb-4">
+            <p class="text-primary mb-1"><i class="i-Calendar text-16 mr-1"></i> Date Created</p>
+            <span>{{bookingData?.created_at}}</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

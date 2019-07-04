@@ -20,7 +20,24 @@ class BookingRepository implements BookingRepositoryInterface
 
     public function get(){
         try{
-            return Bookings::all();
+          return  Bookings::Join('rooms', 'rooms.id', '=', 'bookings.room_id')
+                        ->leftJoin('hotels', 'hotels.id', '=', 'rooms.hotel_id')
+                            ->leftJoin('room_type', 'rooms.room_type_id', '=', 'room_type.id')
+                                 ->get([
+                                     'bookings.id',
+                                     'customer_fullname',
+                                     'customer_email',
+                                     'name as hotel_name',
+                                     'address as hotel_address',
+                                     'room_name',
+                                     'type_name as room_type',
+                                     'total_nights',
+                                     'total_price',
+                                     'start_date',
+                                     'end_date',
+                                     'bookings.created_at'
+                                 ]);
+
         }catch (QueryException $ex){
             return $ex->getMessage();
         }
@@ -36,10 +53,45 @@ class BookingRepository implements BookingRepositoryInterface
     public function getFilteredBookings($year, $month = null){
         try{
             if ($month !== null)
-                return Bookings::whereYear('created_at', '=', $year)
-                                ->whereMonth('created_at', '=', $month)->get();
+                return Bookings::whereYear('bookings.created_at', '=', $year)
+                                ->whereMonth('bookings.created_at', '=', $month)
+                                ->join('rooms', 'rooms.id', '=', 'bookings.room_id')
+                    ->leftJoin('hotels', 'hotels.id', '=', 'rooms.hotel_id')
+                    ->leftJoin('room_type', 'rooms.room_type_id', '=', 'room_type.id')
+                    ->get([
+                        'bookings.id',
+                        'customer_fullname',
+                        'customer_email',
+                        'name as hotel_name',
+                        'address as hotel_address',
+                        'room_name',
+                        'type_name as room_type',
+                        'total_nights',
+                        'total_price',
+                        'start_date',
+                        'end_date',
+                        'bookings.created_at'
+                    ]);
 
-                return Bookings::whereYear('created_at', '=', $year)->get();
+                return Bookings::whereYear('bookings.created_at', '=', $year)
+                    ->whereMonth('bookings.created_at', '=', $month)
+                    ->join('rooms', 'rooms.id', '=', 'bookings.room_id')
+                    ->leftJoin('hotels', 'hotels.id', '=', 'rooms.hotel_id')
+                    ->leftJoin('room_type', 'rooms.room_type_id', '=', 'room_type.id')
+                    ->get([
+                        'bookings.id',
+                        'customer_fullname',
+                        'customer_email',
+                        'name as hotel_name',
+                        'address as hotel_address',
+                        'room_name',
+                        'type_name as room_type',
+                        'total_nights',
+                        'total_price',
+                        'start_date',
+                        'end_date',
+                        'bookings.created_at'
+                    ]);
         }catch (QueryException $ex){
             return $ex->getMessage();
         }
@@ -55,7 +107,27 @@ class BookingRepository implements BookingRepositoryInterface
 
     public function getBookingByID($bookingID){
         try{
-         return  Bookings::find($bookingID);
+         return  Bookings::where('bookings.id', $bookingID)
+                     ->join('rooms', 'rooms.id', '=', 'bookings.room_id')
+                     ->leftJoin('hotels', 'hotels.id', '=', 'rooms.hotel_id')
+                     ->leftJoin('room_type', 'rooms.room_type_id', '=', 'room_type.id')
+                     ->leftJoin('prices', 'prices.room_type_id', '=', 'room_type.id')
+                     ->first([
+                         'rooms.id as room_id',
+                         'bookings.id',
+                         'customer_fullname',
+                         'customer_email',
+                         'name as hotel_name',
+                         'address as hotel_address',
+                         'room_name',
+                         'type_name as room_type',
+                         'total_nights',
+                         'total_price',
+                         'start_date',
+                         'end_date',
+                         'bookings.created_at',
+                         'currency'
+                     ]);
         }catch (QueryException $ex){
             return $ex->getMessage();
         }

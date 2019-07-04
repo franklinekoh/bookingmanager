@@ -22,6 +22,7 @@ import { ViewRoomComponent} from '../room/view-room/view-room.component';
 import { EditRoomComponent} from '../room/edit-room/edit-room.component';
 import { BookingsComponent } from '../booking/bookings/bookings.component';
 import { CreateBookingComponent } from '../booking/create-booking/create-booking.component';
+import { ViewBookingComponent } from '../booking/view-booking/view-booking.component';
 
 
 const routes: Routes = [
@@ -43,6 +44,7 @@ const routes: Routes = [
   { path: 'room/edit/:id', component: EditRoomComponent, canActivate: [AuthGuard]},
   { path: 'booking', component: BookingsComponent, canActivate: [AuthGuard]},
   { path: 'booking/create', component: CreateBookingComponent, canActivate: [AuthGuard]},
+  { path: 'booking/:id', component: ViewBookingComponent, canActivate: [AuthGuard]},
   { path: '', redirectTo: 'hotel', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent},
 

@@ -110,12 +110,14 @@ Route::group([
 
     Route::get('/{bookingID}', 'BookingController@getBookingByID');
 
-    Route::post('user/', 'BookingController@storeBookingForRegisteredUsers');
+    Route::post('/total', 'BookingController@getTotalNightAndPrice');
 
-    Route::post('visitor/', 'BookingController@storeBookingForUnregisteredUsers');
+    Route::post('user/', 'BookingController@storeBookingForRegisteredUsers');
 
     Route::put('/', 'BookingController@editBooking');
 
-    Route::delete('/', 'BookingController@deleteBooking');
+    Route::delete('/{bookingID}', 'BookingController@deleteBooking');
 
 });
+
+Route::post('bookings/visitor/', 'BookingController@storeBookingForUnregisteredUsers');

@@ -1,0 +1,67 @@
+<app-header></app-header>
+<!-- ============ Body content start ============= -->
+<div class="main-content-wrap sidenav-open d-flex flex-column">
+
+
+  <app-page-title [heading]="heading"></app-page-title>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card mb-4">
+        <div class="card-header">
+          <button class="btn btn-warning text-right float-right" (click)="goBack()" type="button" aria-haspopup="true" aria-expanded="false">
+            go back <i class="nav-icon i-Arrow-Left"></i>
+          </button>
+        </div>
+        <div class="card-body">
+          <div class="card-title mb-3">Create Room</div>
+          <form [formGroup]="createRoom" (submit)="submitCreateForm()">
+            <div class="row">
+              <div class="col-md-3 form-group mb-3">
+                <label>Room</label>
+                <select class="form-control" formControlName="roomID" (change)="getTotalNightAndPrice()">
+                  <option value=""> Select Room</option>
+                  <option *ngFor="let item of roomsData" value="{{item?.id}}">{{item?.room_name}} - {{item?.room_type}}</option>
+                </select>
+
+              </div>
+
+              <div class="col-md-3 form-group mb-3">
+                <label>Start Date</label>
+                <input type="date" class="form-control" formControlName="startDate" (change)="getTotalNightAndPrice()">
+              </div>
+
+              <div class="col-md-3 form-group mb-3">
+                <label>End Date</label>
+                <input type="date" class="form-control" formControlName="endDate" (change)="getTotalNightAndPrice()">
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 form-group mb-3">
+                <label>Customer Name</label>
+                <input type="text" class="form-control" disabled formControlName="customerName">
+              </div>
+              <div class="col-md-3 form-group mb-3">
+                <label>Customer Email</label>
+                <input type="email" class="form-control" disabled formControlName="customerEmail">
+              </div>
+              <div class="col-md-3 form-group mb-3">
+                <label>Total Nights</label>
+                <input type="number" class="form-control" disabled formControlName="totalNights">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-9 form-group mb-3">
+                <label>Total Price</label>
+                <input type="text" class="form-control" disabled formControlName="totalPrice">
+              </div>
+            </div>
+
+            <button class="btn btn-primary" [disabled]="!createRoom.valid">Submit</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

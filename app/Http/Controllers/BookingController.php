@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Repositories\Room\RoomRepositoryInterface;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Repositories\BookingRepositoryInterface;
@@ -19,14 +20,23 @@ class BookingController extends Controller
     protected $book;
 
     /**
+     * The book repository instance.
+     *
+     * @var \App\Repositories\RoomRepositoryInterface
+     */
+    protected $room;
+
+    /**
      * The room repository instance.
      *
      * @var \App\Utilities\BookingUtilityInterface
+     * @param $room
      */
 
-    public function __construct(BookingRepositoryInterface $book)
+    public function __construct(BookingRepositoryInterface $book, RoomRepositoryInterface $room)
     {
         $this->book = $book;
+        $this->room = $room;
     }
 
 
@@ -74,7 +84,9 @@ class BookingController extends Controller
                 'startDate' => 'required',
                 'endDate' => 'required',
                 'customerName' => 'required',
-                'customerEmail' => 'required'
+                'customerEmail' => 'required',
+                'totalNights' => 'required',
+                'totalPrice' => 'required',
             ]);
 
         if($validator->fails()){
@@ -97,8 +109,9 @@ class BookingController extends Controller
                 'data' => null
             ]);
 
-        $totalNights = $bookingUtility->getTotalNights();
-        $totalPrice = $bookingUtility->getTotalPrice();
+        $this->room->update($request->input('roomID'), [
+            'is_available' => 0
+        ]);
 
        $data = $this->book->store([
             'room_id' => $request->input('roomID'),
@@ -106,8 +119,8 @@ class BookingController extends Controller
             'end_date' => Carbon::parse($request->input('endDate')),
             'customer_fullname' => $request->input('customerName'),
             'customer_email' => $request->input('customerEmail'),
-            'total_nights' => $totalNights,
-            'total_price' => $totalPrice['amount'],
+            'total_nights' => $request->input('totalNights'),
+            'total_price' => $request->input('totalPrice'),
             'user_id' => $userID
         ]);
 
@@ -154,7 +167,7 @@ class BookingController extends Controller
        $data = $this->book->get();
 
         return response()->json([
-            'status' => false,
+            'status' => true,
             'message' => null,
             'data' => $data
         ]);
@@ -290,12 +303,16 @@ class BookingController extends Controller
     /**
      * Deletes existing booking
      *
-     * @param Request $request
+     * @param $bookingID
      * @return \Illuminate\Http\JsonResponse
      */
-    public function deleteBooking(Request $request){
+    public function deleteBooking($bookingID){
 
-        $validator = Validator::make($request->all(),
+        $request = [
+            'bookingID' => $bookingID
+        ];
+
+        $validator = Validator::make($request,
             [
                 'bookingID' => 'required|exists:bookings,id',
             ]);
@@ -307,11 +324,54 @@ class BookingController extends Controller
             ]);
         }
 
-        $this->book->delete($request->input('bookingID'));
+        $roomID = $this->book->getBookingByID($bookingID)->room_id;
+        $this->room->update($roomID, [
+            'is_available' => 1
+        ]);
+        $this->book->delete($bookingID);
 
         return response()->json([
             'status' => true,
             'message' => 'booking deleted successfully'
+        ]);
+    }
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function getTotalNightAndPrice(Request $request){
+
+        $validator = Validator::make($request->all(),
+            [
+                'roomID' => 'required|exists:rooms,id',
+                'startDate' => 'required',
+                'endDate' => 'required'
+            ]);
+
+        if($validator->fails()){
+            return response()->json([
+                'status' => false,
+                'message' => $validator->errors()->all()
+            ]);
+        }
+
+        $bookingUtility = new BookingUtility(
+            $request->input('startDate'),
+            $request->input('endDate'),
+            $request->input('roomID'),
+            new RoomRepository());
+
+        $totalNights = $bookingUtility->getTotalNights();
+        $totalPrice = $bookingUtility->getTotalPrice();
+
+        return response()->json([
+            'status' => true,
+            'message' => null,
+            'data' => [
+                'total_nights' => $totalNights,
+                'total_price' => $totalPrice
+            ]
         ]);
     }
 }
