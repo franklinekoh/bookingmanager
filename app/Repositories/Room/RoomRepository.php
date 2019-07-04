@@ -1,14 +1,13 @@
 <?php
 
-
 namespace App\Repositories\Room;
 
 use App\Room;
 use Illuminate\Database\QueryException;
 
+
 class RoomRepository implements RoomRepositoryInterface
 {
-
     /**
      * Gets all rooms
      * @return \Illuminate\Database\Eloquent\Collection|string
@@ -153,7 +152,7 @@ class RoomRepository implements RoomRepositoryInterface
      */
     public function update($roomID, array $data){
         try{
-           return Room::where('id', $roomID)->update($data);
+            return Room::where('id', $roomID)->update($data);
         }catch (QueryException $ex){
             return $ex->getMessage();
         }
@@ -173,4 +172,5 @@ class RoomRepository implements RoomRepositoryInterface
         }
         Room::destroy($roomID);
     }
+
 }
