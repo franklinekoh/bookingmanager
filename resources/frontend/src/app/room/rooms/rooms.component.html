@@ -47,13 +47,13 @@
                 <td>{{item?.hotel_state}}</td>
                 <td>{{item?.email}}</td>
                 <td>
-                  <a [routerLink]="['/room/type/edit',item?.id]" class="text-success mr-2">
+                  <a [routerLink]="['/room/edit',item?.id]" class="text-success mr-2">
                     <i class="nav-icon i-Pen-2 font-weight-bold"></i>
                   </a>
-                  <a [routerLink]="['/room/type/',item?.id]" class="text-success mr-2">
+                  <a [routerLink]="['/room/',item?.id]" class="text-success mr-2">
                     <i class="nav-icon i-Eye font-weight-bold"></i>
                   </a>
-                  <a  class="text-danger mr-2" (click)="deleteRoomType(item?.id)">
+                  <a  class="text-danger mr-2" (click)="deleteRoom(item?.id)">
                     <i class="nav-icon i-Close-Window font-weight-bold"></i>
                   </a>
                 </td>

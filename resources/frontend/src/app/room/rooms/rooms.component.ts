@@ -28,4 +28,19 @@ export class RoomsComponent implements OnInit {
       console.log(error);
     });
   }
+
+  deleteRoom(id: number) {
+    this.roomService.deleteRoom(id).subscribe( data => {
+      if (data.status) {
+        this.router.navigateByUrl('/', {skipLocationChange: true}).then(() =>
+          this.router.navigate(['room']));
+        this.toastr.success(data.message);
+      } else {
+        this.toastr.error(data.message);
+      }
+    }, error => {
+      console.log(error);
+      this.toastr.error(error.message);
+    });
+  }
 }

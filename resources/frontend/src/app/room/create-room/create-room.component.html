@@ -1,0 +1,55 @@
+<app-header></app-header>
+<!-- ============ Body content start ============= -->
+<div class="main-content-wrap sidenav-open d-flex flex-column">
+
+
+  <app-page-title [heading]="heading"></app-page-title>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card mb-4">
+        <div class="card-header">
+          <button class="btn btn-warning text-right float-right" (click)="goBack()" type="button" aria-haspopup="true" aria-expanded="false">
+            go back <i class="nav-icon i-Arrow-Left"></i>
+          </button>
+        </div>
+        <div class="card-body">
+          <div class="card-title mb-3">Create Room</div>
+          <form [formGroup]="createForm" (submit)="submitCreateForm()">
+            <div class="row">
+              <div class="col-md-6 form-group mb-3">
+                <label>Room Name</label>
+                <input type="text" class="form-control" formControlName="roomName">
+              </div>
+              <div class="col-md-6 form-group mb-3">
+                <label>RoomType</label>
+                <select class="form-control" formControlName="roomTypeID">
+                  <option value=""> Select Room Type</option>
+                  <option *ngFor="let item of roomTypeData" value="{{item?.id}}">{{item?.type_name}}</option>
+                </select>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 form-group mb-3">
+                <label>Hotel</label>
+                <select class="form-control" formControlName="hotelID">
+                  <option value=""> Select Room Type</option>
+                  <option *ngFor="let item of hotelData" value="{{item?.id}}">{{item?.name}}</option>
+                </select>
+
+              </div>
+              <div class="col-md-6 form-group mb-3">
+                <label>Room Image(upload image for this room. Image should be not be greater than 2MB)</label>
+                <input type="file" formControlName="imageFile" (change)="onFileSelected($event)">
+              </div>
+
+            </div>
+
+            <button class="btn btn-primary" [disabled]="!createForm.valid">Submit</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

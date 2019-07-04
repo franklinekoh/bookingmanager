@@ -1,0 +1,67 @@
+<app-header></app-header>
+<!-- ============ Body content start ============= -->
+<div class="main-content-wrap sidenav-open d-flex flex-column">
+
+
+  <app-page-title [heading]="heading"></app-page-title>
+
+  <div class="card user-profile o-hidden mb-4">
+    <div class="header-cover" style="background-image: url({{'http://localhost:8000/'+roomData?.room_image_path}})"></div>
+    <div class="user-info">
+      <p class="m-0 text-24" style="padding-top: 50px;">{{roomData?.room_name}}</p>
+    </div>
+    <div class="card-header">
+      <button class="btn btn-warning text-right float-right" (click)="goBack()" type="button" aria-haspopup="true" aria-expanded="false">
+        go back <i class="nav-icon i-Arrow-Left"></i>
+      </button>
+    </div>
+    <div class="card-body">
+
+      <div class="row">
+        <div class="col-md-4 col-6">
+          <div class="mb-4">
+            <p class="text-primary mb-1"><i class="i-Home1 text-16 mr-1"></i> Name</p>
+            <span>{{roomData?.room_name}}</span>
+          </div>
+          <div class="mb-4">
+            <p class="text-primary mb-1"><i class="i-Home-2 text-16 mr-1"></i> Hotel Name</p>
+            <span>{{roomData?.hotel_name}}</span>
+          </div>
+          <div class="mb-4">
+            <p class="text-primary mb-1"><i class="i-Window-2 text-16 mr-1"></i> Room Type</p>
+            <span>{{roomData?.room_type}}</span>
+          </div>
+        </div>
+        <div class="col-md-4 col-6">
+          <div class="mb-4">
+            <p class="text-primary mb-1"><i class="i-Globe text-16 mr-1"></i> Hotel City</p>
+            <span>{{roomData?.hotel_city}}</span>
+          </div>
+          <div class="mb-4">
+            <p class="text-primary mb-1"><i class="i-Globe text-16 mr-1"></i> Hotel State</p>
+            <span>{{roomData?.hotel_state}}</span>
+          </div>
+          <div class="mb-4">
+            <p class="text-primary mb-1"><i class="i-Geo2- text-16 mr-1"></i> Hotel Country</p>
+            <span>{{roomData?.hotel_country}}</span>
+          </div>
+        </div>
+        <div class="col-md-4 col-6">
+          <div class="mb-4">
+            <p class="text-primary mb-1"><i class="i-Email text-16 mr-1"></i> Hotel Email</p>
+            <span>{{roomData?.email}}</span>
+          </div>
+          <div class="mb-4">
+            <p class="text-primary mb-1"><i class="i-Telephone text-16 mr-1"></i> Phone</p>
+            <span>{{roomData?.phone}}</span>
+          </div>
+          <div class="mb-4">
+            <p class="text-primary mb-1"><i class="i-Money-Bag text-16 mr-1"></i> Amount</p>
+            <span>{{roomData?.amount}} {{roomData?.currency}}</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

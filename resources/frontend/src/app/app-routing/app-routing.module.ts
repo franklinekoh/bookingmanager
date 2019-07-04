@@ -18,6 +18,8 @@ import { ViewRoomTypeComponent } from '../room/view-room-type/view-room-type.com
 import { EditRoomTypeComponent } from '../room/edit-room-type/edit-room-type.component';
 import { RoomsComponent} from '../room/rooms/rooms.component';
 import { CreateRoomComponent } from '../room/create-room/create-room.component';
+import { ViewRoomComponent} from '../room/view-room/view-room.component';
+import { EditRoomComponent} from '../room/edit-room/edit-room.component';
 
 
 const routes: Routes = [
@@ -34,7 +36,9 @@ const routes: Routes = [
   { path: 'room/type', component: RoomTypesComponent, canActivate: [AuthGuard]},
   { path: 'room/type/create', component: RoomTypesCreateComponent, canActivate: [AuthGuard]},
   { path: 'room/type/:id', component: ViewRoomTypeComponent, canActivate: [AuthGuard]},
+  { path: 'room/:id', component: ViewRoomComponent, canActivate: [AuthGuard]},
   { path: 'room/type/edit/:id', component: EditRoomTypeComponent, canActivate: [AuthGuard]},
+  { path: 'room/edit/:id', component: EditRoomComponent, canActivate: [AuthGuard]},
   { path: '', redirectTo: 'hotel', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent},
 
