@@ -88,7 +88,9 @@ class PriceController extends Controller
         $validator = Validator::make($request->all(),
             [
                 'priceID' => 'required|numeric|exists:prices,id',
-                'data' => 'required'
+                'amount' => '',
+                'currency' => '',
+                'room_type_id' => 'exists:room_type,id|unique:prices,room_type_id'
             ]);
 
         if($validator->fails()){
@@ -98,7 +100,18 @@ class PriceController extends Controller
             ]);
         }
 
-       $updated = $this->price->update($request->input('priceID'), $request->input('data'));
+        $data = [];
+
+        if (array_key_exists('amount', $request->all()))
+            $data['amount'] = $request->input('amount');
+
+        if (array_key_exists('currency', $request->all()))
+            $data['currency'] = $request->input('currency');
+
+        if (array_key_exists('room_type_id', $request->all()))
+            $data['room_type_id'] = $request->input('room_type_id');
+
+       $updated = $this->price->update($request->input('priceID'), $data);
 
         if (gettype($updated) != 'integer')
             return response()->json([

@@ -44,6 +44,24 @@ export class PriceService {
       })
     );
   }
+
+  editPrice(body: any) {
+    const httpOptions: any = {
+      headers: new HttpHeaders({
+        'content-type': 'application/json'
+      })
+    };
+
+    return this.http.put(environment.apiUrl + 'price', body, httpOptions).pipe(
+      tap((data: any) => {
+      }),
+      catchError(err => {
+
+        return throwError(err);
+      })
+    );
+  }
+
   getPriceByID(priceID: number) {
     const httpOptions: any = {
       headers: new HttpHeaders({

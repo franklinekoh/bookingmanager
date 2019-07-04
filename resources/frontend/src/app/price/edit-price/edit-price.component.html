@@ -1,3 +1,48 @@
-<p>
-  edit-price works!
-</p>
+<app-header></app-header>
+<!-- ============ Body content start ============= -->
+<div class="main-content-wrap sidenav-open d-flex flex-column">
+
+
+  <app-page-title [heading]="heading"></app-page-title>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card mb-4">
+        <div class="card-header">
+          <button class="btn btn-warning text-right float-right" (click)="goBack()" type="button" aria-haspopup="true" aria-expanded="false">
+            go back <i class="nav-icon i-Arrow-Left"></i>
+          </button>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="editForm" (submit)="submitEditForm()">
+            <div class="row">
+              <div class="col-md-4 form-group mb-3">
+                <label>Amount</label>
+                <input type="number" class="form-control" formControlName="amount">
+              </div>
+              <div class="col-md-4 form-group mb-3">
+                <label>Currency</label>
+                <select class="form-control" formControlName="currency">
+                  <option value="">Select currency</option>
+                  <option value="USD" [selected]="priceDetail?.currency === 'USD'" >USD</option>
+                  <option value="GBP" [selected]="priceDetail?.currency === 'GBP'">GBP</option>
+                  <option value="NGN" [selected]="priceDetail?.currency === 'NGN'">NGN</option>
+                </select>
+
+              </div>
+              <div class="col-md-4 form-group mb-3">
+                <label>Room Type</label>
+                <select class="form-control" formControlName="roomTypeID">
+                  <option value="">Select room type</option>
+                  <option *ngFor="let item of roomTypesData" value="{{item?.id}}" [selected]="item?.type_name === priceDetail?.room_type">{{item?.type_name}}</option>
+                </select>
+
+              </div>
+            </div>
+            <button class="btn btn-primary" [disabled]="!editForm.valid">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

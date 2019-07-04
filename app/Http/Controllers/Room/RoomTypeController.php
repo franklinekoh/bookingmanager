@@ -67,7 +67,7 @@ class RoomTypeController extends Controller
         $validator = Validator::make($request->all(),
             [
                 'roomTypeID' => 'required|numeric|exists:room_type,id',
-                'data' => 'required'
+                'type_name' => ''
             ]);
 
         if($validator->fails()){
@@ -77,7 +77,13 @@ class RoomTypeController extends Controller
             ]);
         }
 
-       $updated = $this->roomType->update($request->input('roomTypeID'), $request->input('data'));
+        $data = [];
+
+        if (array_key_exists('type_name', $request->all()))
+            $data['type_name'] = $request->input('type_name');
+
+       $updated = $this->roomType->update($request->input('roomTypeID'), $data);
+
         if (gettype($updated) != 'integer')
             return response()->json([
                 'status' => false,
@@ -109,14 +115,33 @@ class RoomTypeController extends Controller
     }
 
     /**
-     * Delete Room type
+     * Get room type by it's ID
      *
-     * @param Request $request
+     * @param $roomTypeID
      * @return \Illuminate\Http\JsonResponse
      */
-    public function deleteRoomType(Request $request){
+    public function getRoomTypeByID($roomTypeID){
 
-        $validator = Validator::make($request->all(),
+        $data = $this->roomType->getRoomTypeByID($roomTypeID);
+        return response()->json([
+            'status' => true,
+            'message' => null,
+            'data' => $data
+        ]);
+    }
+
+    /**
+     * Delete Room type
+     *
+     * @param $roomTypeID
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function deleteRoomType($roomTypeID){
+
+        $request = [
+            'roomTypeID' => $roomTypeID
+        ];
+        $validator = Validator::make($request,
             [
                 'roomTypeID' => 'required|numeric|exists:room_type,id',
             ]);
@@ -128,7 +153,7 @@ class RoomTypeController extends Controller
             ]);
         }
 
-        $this->roomType->delete($request->input('roomTypeID'));
+        $this->roomType->delete($roomTypeID);
 
         return response()->json([
             'status' => true,

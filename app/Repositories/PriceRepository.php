@@ -48,6 +48,7 @@ class PriceRepository implements PriceRepositoryInterface
               ->join('room_type', 'prices.room_type_id', '=', 'room_type.id')
                 ->first([
                     'prices.id',
+                    'room_type.id as room_type_id',
                     'amount',
                     'currency',
                     'type_name as room_type',

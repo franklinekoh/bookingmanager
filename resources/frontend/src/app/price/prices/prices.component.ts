@@ -32,7 +32,7 @@ export class PricesComponent implements OnInit {
   deletePrice(priceID) {
     this.priceService.deletePrice(priceID).subscribe(data => {
 
-      if (data.status === true){
+      if (data.status === true) {
         this.router.navigateByUrl('/', {skipLocationChange: true}).then(() =>
           this.router.navigate(['price']));
         this.toastr.success(data.message);

@@ -19,22 +19,21 @@ export class CreatePriceComponent implements OnInit {
               private toastr: ToastrService,
               private router: Router,
               private roomType: RoomTypeService,
-              private price: PriceService) {
+              private price: PriceService) {}
+  heading = 'Creat Price';
+  createForm: any;
+  roomTypesData: any;
+  ngOnInit() {
     this.createForm = this.formBuilder.group({
       'amount': ['', Validators.required],
       'currency': ['', Validators.required],
       'roomTypeID': ['', Validators.required]
     });
-  }
-  heading = 'Creat Price';
-  createForm: any;
-  roomTypesData: any;
-  ngOnInit() {
     this.getRoomType();
   }
 
   submitCreateForm() {
-    if (this.createForm.dirty && this.createForm.valid){
+    if (this.createForm.dirty && this.createForm.valid) {
       this.price.createPrice(this.createForm.value).subscribe(data => {
           if (data.status === true) {
             this.toastr.success(data.message);

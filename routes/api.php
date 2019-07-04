@@ -40,7 +40,9 @@ Route::prefix('room')->group(function () {
 
     Route::get('type', 'Room\RoomTypeController@getRoomTypes');
 
-    Route::delete('type', 'Room\RoomTypeController@deleteRoomType');
+    Route::get('type/{id}', 'Room\RoomTypeController@getRoomTypeByID');
+
+    Route::delete('type/{id}', 'Room\RoomTypeController@deleteRoomType');
 
     Route::get('/', 'Room\RoomController@getRooms');
 

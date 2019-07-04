@@ -16,11 +16,26 @@ class RoomTypeRepository implements RoomTypeRepositoryInterface
      */
     public function get(){
         try{
-            return RoomType::all();
+            return RoomType::all()->sortBy('created_at');
         }catch (QueryException $ex){
             return $ex->getMessage();
         }
 
+    }
+
+
+    /**
+     * Get room type by ID
+     *
+     * @param $roomTypeID
+     *  * @return \Illuminate\Database\Eloquent\Collection|string
+     */
+    public function getRoomTypeByID($roomTypeID){
+        try{
+            return RoomType::where('id', $roomTypeID)->orderBy('created_at')->first();
+        }catch (QueryException $ex){
+            return $ex->getMessage();
+        }
     }
 
     /**
@@ -47,7 +62,7 @@ class RoomTypeRepository implements RoomTypeRepositoryInterface
      */
     public function update($roomTypeID, array $data){
         try{
-            RoomType::where('id', $roomTypeID)->update($data);
+           return RoomType::where('id', $roomTypeID)->update($data);
         }catch (QueryException $ex){
             return $ex->getMessage();
         }

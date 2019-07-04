@@ -8,6 +8,13 @@ interface RoomTypeRepositoryInterface{
      */
     public function get();
 
+        /**
+         * Get room type by ID
+         *
+         * @param $roomTypeID
+         */
+    public function getRoomTypeByID($roomTypeID);
+
     /**
      * Stores a room type
      *

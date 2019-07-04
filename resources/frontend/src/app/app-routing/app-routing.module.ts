@@ -11,6 +11,11 @@ import { EditHotelComponent } from '../hotel-components/edit-hotel/edit-hotel.co
 import { PricesComponent } from '../price/prices/prices.component';
 import { CreatePriceComponent} from '../price/create-price/create-price.component';
 import { ViewPriceComponent } from '../price/view-price/view-price.component';
+import { EditPriceComponent } from '../price/edit-price/edit-price.component';
+import { RoomTypesComponent } from '../room/room-types/room-types.component';
+import { RoomTypesCreateComponent } from '../room/room-types-create/room-types-create.component';
+import { ViewRoomTypeComponent } from '../room/view-room-type/view-room-type.component';
+import { EditRoomTypeComponent } from '../room/edit-room-type/edit-room-type.component';
 
 
 const routes: Routes = [
@@ -21,6 +26,11 @@ const routes: Routes = [
   { path: 'price', component: PricesComponent, canActivate: [AuthGuard]},
   { path: 'price/create', component: CreatePriceComponent, canActivate: [AuthGuard]},
   { path: 'price/:id', component: ViewPriceComponent, canActivate: [AuthGuard]},
+  { path: 'price/edit/:id', component: EditPriceComponent, canActivate: [AuthGuard]},
+  { path: 'room/type', component: RoomTypesComponent, canActivate: [AuthGuard]},
+  { path: 'room/type/create', component: RoomTypesCreateComponent, canActivate: [AuthGuard]},
+  { path: 'room/type/:id', component: ViewRoomTypeComponent, canActivate: [AuthGuard]},
+  { path: 'room/type/edit/:id', component: EditRoomTypeComponent, canActivate: [AuthGuard]},
   { path: '', redirectTo: 'hotel', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent},
 

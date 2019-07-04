@@ -2,9 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './layouts/header/header.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent } from './layouts/footer/footer.component';
 import { PageTitleComponent } from './page-title/page-title.component';
 import { HotelComponent } from './hotel-components/hotel/hotel.component';
 import { LoginComponent } from './login/login.component';
@@ -20,6 +20,11 @@ import { PricesComponent } from './price/prices/prices.component';
 import { CreatePriceComponent } from './price/create-price/create-price.component';
 import { ViewPriceComponent } from './price/view-price/view-price.component';
 import { EditPriceComponent } from './price/edit-price/edit-price.component';
+import { RoomTypesComponent } from './room/room-types/room-types.component';
+import { RoomTypesCreateComponent } from './room/room-types-create/room-types-create.component';
+import { EditRoomTypeComponent } from './room/edit-room-type/edit-room-type.component';
+import { ViewRoomTypeComponent } from './room/view-room-type/view-room-type.component';
+import { RoomsComponent } from './room/rooms/rooms.component';
 
 export function tokenGetter() {
   return localStorage.getItem('authToken');
@@ -39,7 +44,12 @@ export function tokenGetter() {
     PricesComponent,
     CreatePriceComponent,
     ViewPriceComponent,
-    EditPriceComponent
+    EditPriceComponent,
+    RoomTypesComponent,
+    RoomTypesCreateComponent,
+    EditRoomTypeComponent,
+    ViewRoomTypeComponent,
+    RoomsComponent
   ],
   imports: [
     BrowserModule,
