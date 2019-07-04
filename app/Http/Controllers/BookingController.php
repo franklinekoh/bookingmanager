@@ -211,7 +211,13 @@ class BookingController extends Controller
         $validator = Validator::make($request->all(),
             [
                 'bookingID' => 'required|exists:bookings,id',
-                'data' => 'required'
+                'roomID' => 'required|exists:rooms,id',
+                'startDate' => 'required',
+                'endDate' => 'required',
+                'customerName' => 'required',
+                'customerEmail' => 'required',
+                'totalNights' => 'required',
+                'totalPrice' => 'required',
             ]);
 
         if($validator->fails()){
@@ -221,69 +227,16 @@ class BookingController extends Controller
             ]);
         }
 
-        $validationMessage = [];
-        if (array_key_exists('total_nights', $request->input('data')))
-            $validationMessage[] = 'total_nights can not be edited. Please remove from request signature';
 
-        if (array_key_exists('total_price', $request->input('data')))
-            $validationMessage[] = 'total_price can not be edited. Please remove from request signature';
-
-        if (array_key_exists('user_id', $request->input('data')))
-            $validationMessage[] = 'user_id can not be edited. Please remove from request signature';
-
-        if (!empty($validationMessage))
-            return response()->json([
-                'status' => false,
-                'message' => $validationMessage
-            ]);
-
-        $totalPrice = null;
-        $totalNights = null;
-        $booking = $this->book->getBookingByID($request->input('bookingID'));
-
-        if (array_key_exists('start_date', $request->input('data')) && !array_key_exists('end_date', $request->input('data'))){
-            $bookingUtility = new BookingUtility(
-                $request->input('data')['start_date'],
-                $booking->end_date,
-                $booking->room_id,
-                new RoomRepository());
-
-            $totalNights = $bookingUtility->getTotalNights();
-            $totalPrice = $bookingUtility->getTotalPrice();
-        }
-
-        if (array_key_exists('end_date', $request->input('data')) && !array_key_exists('start_date', $request->input('data'))){
-            $bookingUtility = new BookingUtility(
-                $booking->start_date,
-                $request->input('data')['end_date'],
-                $booking->room_id,
-                new RoomRepository());
-
-            $totalNights = $bookingUtility->getTotalNights();
-            $totalPrice = $bookingUtility->getTotalPrice();
-
-        }
-
-        if (array_key_exists('start_date', $request->input('data')) && array_key_exists('end_date', $request->input('data'))){
-            $bookingUtility = new BookingUtility(
-                $request->input('data')['start_date'],
-                $request->input('data')['end_date'],
-                $booking->room_id,
-                new RoomRepository());
-
-            $totalNights = $bookingUtility->getTotalNights();
-            $totalPrice = $bookingUtility->getTotalPrice();
-        }
-
-        $data = $request->input('data');
-        if ($totalNights !== null){
-            $data['total_nights'] = $totalNights;
-        }
-
-        if ($totalPrice !== null)
-            $data['total_price'] = $totalPrice['amount'];
-
-        $updated = $this->book->update($request->input('bookingID'), $data);
+        $updated = $this->book->update($request->input('bookingID'), [
+            'room_id' => $request->input('roomID'),
+            'start_date' => Carbon::parse($request->input('startDate')),
+            'end_date' => Carbon::parse($request->input('endDate')),
+            'customer_fullname' => $request->input('customerName'),
+            'customer_email' => $request->input('customerEmail'),
+            'total_nights' => $request->input('totalNights'),
+            'total_price' => $request->input('totalPrice')
+        ]);
 
         if (is_string($updated))
             return response()->json([

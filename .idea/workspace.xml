@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="238de8cb-b816-40e2-9bb1-7b40be3e087a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/booking/bookings/bookings.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/booking/bookings/bookings.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/booking/bookings/bookings.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/booking/bookings/bookings.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/booking/create-booking/create-booking.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/booking/create-booking/create-booking.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/booking/create-booking/create-booking.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/booking/create-booking/create-booking.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/booking/view-booking/view-booking.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/booking/view-booking/view-booking.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/booking/view-booking/view-booking.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/booking/view-booking/view-booking.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/services/bookings.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/frontend/src/app/services/bookings.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BookingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BookingController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/BookingRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/BookingRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/app/app-routing/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/app/app-routing/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/app/app.module.ts" afterDir="false" />
     </list>
     <ignored path=".idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,7 +24,7 @@
         <entry file="file://$PROJECT_DIR$/app/Repositories/BookingRepository.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="359">
-              <caret line="119" column="46" lean-forward="true" selection-start-line="119" selection-start-column="46" selection-end-line="119" selection-end-column="46" />
+              <caret line="119" column="46" selection-start-line="119" selection-start-column="46" selection-end-line="119" selection-end-column="46" />
               <folding>
                 <element signature="e#38#77#0#PHP" expanded="true" />
               </folding>
@@ -60,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BookingController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="367" column="33" lean-forward="true" selection-start-line="367" selection-start-column="33" selection-end-line="367" selection-end-column="33" />
+            <state relative-caret-position="447">
+              <caret line="237" column="58" selection-start-line="237" selection-start-column="58" selection-end-line="237" selection-end-column="58" />
               <folding>
                 <element signature="e#40#90#0#PHP" expanded="true" />
               </folding>
@@ -510,7 +494,7 @@
       <workItem from="1562141529039" duration="35466000" />
       <workItem from="1562230129449" duration="25000" />
       <workItem from="1562236065403" duration="1568000" />
-      <workItem from="1562237913384" duration="11707000" />
+      <workItem from="1562237913384" duration="12227000" />
     </task>
     <task id="LOCAL-00001" summary="created database migrations">
       <created>1561552348565</created>
@@ -691,7 +675,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147378000" />
+    <option name="totallyTimeSpent" value="147898000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1148,7 +1132,7 @@
     <entry file="file://$PROJECT_DIR$/app/Repositories/BookingRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
-          <caret line="119" column="46" lean-forward="true" selection-start-line="119" selection-start-column="46" selection-end-line="119" selection-end-column="46" />
+          <caret line="119" column="46" selection-start-line="119" selection-start-column="46" selection-end-line="119" selection-end-column="46" />
           <folding>
             <element signature="e#38#77#0#PHP" expanded="true" />
           </folding>
@@ -1171,8 +1155,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BookingController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="367" column="33" lean-forward="true" selection-start-line="367" selection-start-column="33" selection-end-line="367" selection-end-column="33" />
+        <state relative-caret-position="447">
+          <caret line="237" column="58" selection-start-line="237" selection-start-column="58" selection-end-line="237" selection-end-column="58" />
           <folding>
             <element signature="e#40#90#0#PHP" expanded="true" />
           </folding>
