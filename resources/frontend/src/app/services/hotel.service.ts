@@ -14,7 +14,8 @@ export class HotelService {
   getAllHotel() {
     const httpOptions: any = {
       headers: new HttpHeaders({
-        'content-type': 'application/json'
+        'content-type': 'application/json',
+        'Authorization': localStorage.getItem('authToken')
       })
     };
 
@@ -30,7 +31,8 @@ export class HotelService {
   getHotel(id: number) {
     const httpOptions: any = {
       headers: new HttpHeaders({
-        'content-type': 'application/json'
+        'content-type': 'application/json',
+        'Authorization': localStorage.getItem('authToken')
       })
     };
 

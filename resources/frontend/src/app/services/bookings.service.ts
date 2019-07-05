@@ -15,7 +15,8 @@ export class BookingsService {
   getAllBooking() {
     const httpOptions: any = {
       headers: new HttpHeaders({
-        'content-type': 'application/json'
+        'content-type': 'application/json',
+        'Authorization': localStorage.getItem('authToken')
       })
     };
 
@@ -32,7 +33,8 @@ export class BookingsService {
   getFilteredBooking(year: number, month: number) {
     const httpOptions: any = {
       headers: new HttpHeaders({
-        'content-type': 'application/json'
+        'content-type': 'application/json',
+        'Authorization': localStorage.getItem('authToken')
       })
     };
 
@@ -49,7 +51,8 @@ export class BookingsService {
   getBooking(id: number) {
     const httpOptions: any = {
       headers: new HttpHeaders({
-        'content-type': 'application/json'
+        'content-type': 'application/json',
+        'Authorization': localStorage.getItem('authToken')
       })
     };
 
@@ -67,7 +70,8 @@ export class BookingsService {
 
     const httpOptions: any = {
       headers: new HttpHeaders({
-        'content-type': 'application/json'
+        'content-type': 'application/json',
+        'Authorization': localStorage.getItem('authToken')
       })
     };
 
@@ -120,7 +124,8 @@ export class BookingsService {
   deleteBooking(id: number) {
     const httpOptions: any = {
       headers: new HttpHeaders({
-        'content-type': 'application/json'
+        'content-type': 'application/json',
+        'Authorization': localStorage.getItem('authToken')
       })
     };
 
