@@ -26,7 +26,7 @@ class AuthController extends Controller
     public function __construct(UserRepositoryInterface $user)
     {
         $this->user = $user;
-        $this->middleware('auth:api', ['except' => ['login', 'register']]);
+        $this->middleware('jwt.auth', ['except' => ['login', 'register']]);
     }
 
     /**

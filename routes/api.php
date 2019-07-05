@@ -81,7 +81,7 @@ Route::prefix('price')->group(function () {
 Route::post('register', 'AuthController@register');
 
 Route::group([
-    'prefix' => 'auth'
+    'prefix' => 'auth',
 ], function () {
 
     Route::get('user', 'AuthController@getUser');
@@ -100,7 +100,7 @@ Route::group([
  * All routes related to booking
  */
 Route::group([
-//    'middleware' => 'auth:api',
+    'middleware' => 'jwt.auth',
     'prefix' => 'bookings'
 ], function () {
 
