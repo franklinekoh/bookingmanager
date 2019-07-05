@@ -100,7 +100,7 @@ Route::group([
  * All routes related to booking
  */
 Route::group([
-//    'middleware' => 'auth',
+//    'middleware' => 'auth:api',
     'prefix' => 'bookings'
 ], function () {
 

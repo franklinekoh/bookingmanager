@@ -1,4 +1,9 @@
-## Hotel Booking system 
+## Hotel Booking System Manager
+
+This is a hotel booking system Manager. This application is able to register a new hotel and edit already existing hotels. <br>
+&nbsp; &nbsp;Also, Rooms can be created, edited and deleted for any given hotel. Room types for each room can also be specified. <br>
+&nbsp; &nbsp;Prices for each room can also be specified. This prices can be edited and deleted.<br>
+&nbsp; &nbsp;Rooms in each hotel can be booked. This booking records, can be edited and deleted as well.
 
 ### Local Setup
 

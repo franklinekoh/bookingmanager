@@ -16,3 +16,7 @@ Route::get('/', function () {
 //    View::addExtension('h tml', 'php');
 //    return View::make('index');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
