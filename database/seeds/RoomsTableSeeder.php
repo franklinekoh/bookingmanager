@@ -4,6 +4,8 @@ use Illuminate\Database\Seeder;
 use Faker\Factory as Faker;
 use App\Repositories\Room\RoomRepositoryInterface;
 use App\Repositories\Room\RoomTypeRepositoryInterface;
+use App\Room;
+use Illuminate\Support\Facades\DB;
 
 class RoomsTableSeeder extends Seeder
 {
@@ -36,17 +38,21 @@ class RoomsTableSeeder extends Seeder
         $faker = Faker::create();
         for($i = 0; $i < 10; $i++){
 
-            $imageName = $i + 1;
-            $hotelID = $i + 1;
+
 
             $this->roomType->store([
                'type_name' => $faker->text(10)
             ]);
 
-            $this->room->store([
+
+        }
+
+        for($i = 0; $i < 10; $i++){
+            $imageName = $i + 1;
+            Room::create([
                 'room_name' => strtoupper(str_random(3)).''.$i,
-                'hotel_id' => $hotelID,
-                'room_type_id' => $i,
+                'hotel_id' => 1,
+                'room_type_id' => $i + 1,
                 'room_image_path' => "uploads/room/room{$imageName}.jpg"
             ]);
         }

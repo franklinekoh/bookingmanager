@@ -32,6 +32,7 @@ import { BookingsComponent } from './booking/bookings/bookings.component';
 import { CreateBookingComponent } from './booking/create-booking/create-booking.component';
 import { ViewBookingComponent } from './booking/view-booking/view-booking.component';
 import { EditBookingComponent } from './booking/edit-booking/edit-booking.component';
+import { GoBackButtonComponent } from './layouts/go-back-button/go-back-button.component';
 
 export function tokenGetter() {
   return localStorage.getItem('authToken');
@@ -63,7 +64,8 @@ export function tokenGetter() {
     BookingsComponent,
     CreateBookingComponent,
     ViewBookingComponent,
-    EditBookingComponent
+    EditBookingComponent,
+    GoBackButtonComponent
   ],
   imports: [
     BrowserModule,

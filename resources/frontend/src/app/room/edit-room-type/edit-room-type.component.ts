@@ -62,7 +62,4 @@ export class EditRoomTypeComponent implements OnInit {
     });
   }
 
-  goBack(): void {
-    this.location.back();
-  }
 }

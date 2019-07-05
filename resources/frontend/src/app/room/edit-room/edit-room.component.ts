@@ -44,10 +44,6 @@ export class EditRoomComponent implements OnInit {
     this.selectedFile = <File>event.target.files[0];
   }
 
-  goBack(): void {
-    this.location.back();
-  }
-
   getRoom(){
     const id = +this.route.snapshot.paramMap.get('id');
     this.roomService.getRoomByID(id).subscribe(data => {

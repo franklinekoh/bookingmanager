@@ -29,7 +29,4 @@ export class HotelDetailsComponent implements OnInit {
     });
   }
 
-  goBack(): void {
-    this.location.back();
-  }
 }

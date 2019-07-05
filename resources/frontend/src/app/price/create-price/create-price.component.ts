@@ -44,9 +44,6 @@ export class CreatePriceComponent implements OnInit {
     }
   }
 
-  goBack(): void {
-    this.location.back();
-  }
   getRoomType() {
     this.roomType.getRoomTypes().subscribe(data => {
       this.roomTypesData = data.data;

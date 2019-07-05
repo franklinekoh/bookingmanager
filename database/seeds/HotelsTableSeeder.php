@@ -43,7 +43,7 @@ class HotelsTableSeeder extends Seeder
             'zipcode' => $faker->postcode,
             'phone' => $faker->phoneNumber,
             'email' => $faker->email,
-            'image_path' => $faker->imageUrl()
+            'image_path' => 'uploads/hotel/hotel.jpg'
         ]);
     }
 }

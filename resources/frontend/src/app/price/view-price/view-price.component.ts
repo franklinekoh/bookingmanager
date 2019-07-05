@@ -22,9 +22,7 @@ export class ViewPriceComponent implements OnInit {
   ngOnInit() {
     this.getPrice();
   }
-  goBack(): void {
-    this.location.back();
-  }
+
   getPrice() {
     const id = +this.route.snapshot.paramMap.get('id');
     this.price.getPriceByID(id).subscribe(data => {

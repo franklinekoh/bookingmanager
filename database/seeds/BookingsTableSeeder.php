@@ -3,6 +3,7 @@
 use Illuminate\Database\Seeder;
 use App\Repositories\BookingRepositoryInterface;
 use Faker\Factory as Faker;
+use App\Bookings;
 
 class BookingsTableSeeder extends Seeder
 {
@@ -31,8 +32,8 @@ class BookingsTableSeeder extends Seeder
         //
         $faker = Faker::create();
         for($i = 0; $i < 10; $i++){
-            $this->booking->store([
-                'room_id' => $i,
+            Bookings::create([
+                'room_id' => $i + 1,
                 'start_date' => $faker->dateTime(),
                 'end_date' => $faker->dateTime(),
                 'customer_fullname' => $faker->name,

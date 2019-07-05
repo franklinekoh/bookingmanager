@@ -94,8 +94,5 @@ export class EditHotelComponent implements OnInit {
     }
   }
 
-  goBack(): void {
-    this.location.back();
-  }
 
 }

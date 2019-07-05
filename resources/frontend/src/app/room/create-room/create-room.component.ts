@@ -42,10 +42,6 @@ export class CreateRoomComponent implements OnInit {
     this.selectedFile = <File>event.target.files[0];
   }
 
-  goBack(): void {
-    this.location.back();
-  }
-
   getRoomTypes(){
     this.roomTypeService.getRoomTypes().subscribe(data => {
       this.roomTypeData = data.data;

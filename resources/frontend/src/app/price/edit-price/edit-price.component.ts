@@ -74,8 +74,4 @@ export class EditPriceComponent implements OnInit {
       console.log(error);
     });
   }
-
-  goBack(): void {
-    this.location.back();
-  }
 }

@@ -19,9 +19,6 @@ export class ViewRoomTypeComponent implements OnInit {
     this.getRoomType();
   }
 
-  goBack(): void {
-    this.location.back();
-  }
   getRoomType() {
     const id = +this.route.snapshot.paramMap.get('id');
     this.roomType.getRoomTypeByID(id).subscribe(data => {

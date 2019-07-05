@@ -123,8 +123,4 @@ export class EditBookingComponent implements OnInit {
     }
   }
 
-  goBack(): void {
-    this.location.back();
-  }
-
 }

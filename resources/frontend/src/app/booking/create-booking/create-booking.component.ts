@@ -52,10 +52,6 @@ export class CreateBookingComponent implements OnInit {
     });
   }
 
-  goBack(): void {
-    this.location.back();
-  }
-
   submitCreateForm(){
 
     if (this.createRoom.valid){

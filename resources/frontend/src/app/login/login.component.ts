@@ -3,6 +3,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
 import { Router } from '@angular/router';
 import { AuthService} from '../services/auth.service';
+import {Location} from '@angular/common';
 
 @Component({
   selector: 'app-login',
@@ -14,6 +15,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   constructor(private formBuilder: FormBuilder,
               private toastr: ToastrService,
               private router: Router,
+              private location: Location,
               private authService: AuthService) {
     this.loginForm = this.formBuilder.group({
       'email': ['', [Validators.required, Validators.email]],
@@ -35,9 +37,7 @@ export class LoginComponent implements OnInit, OnDestroy {
         'email': this.loginForm.value.email,
         'password': this.loginForm.value.password
       }).subscribe((data) => {
-          console.log(data);
-          this.toastr.success('Login successful');
-          this.router.navigate(['hotel']);
+            this.router.navigate(['hotel']);
       }, error => {
         if (error.status === 401) {
           this.toastr.error('Login failed, try again');

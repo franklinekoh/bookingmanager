@@ -30,8 +30,4 @@ export class ViewBookingComponent implements OnInit {
     });
   }
 
-  goBack(): void {
-    this.location.back();
-  }
-
 }

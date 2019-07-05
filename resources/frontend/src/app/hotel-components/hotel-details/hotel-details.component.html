@@ -6,14 +6,13 @@
   <app-page-title [heading]="heading"></app-page-title>
 
   <div class="card user-profile o-hidden mb-4">
-    <div class="header-cover" style="background-image: url('assets/images/photo-wide-4.jpg')"></div>
+    <img class="header-image" src="{{'http://localhost:8000/'+hotelData?.image_path}}" alt="room image">
+
     <div class="user-info">
       <p class="m-0 text-24" style="padding-top: 50px;">{{hotelData?.name}}</p>
     </div>
     <div class="card-header">
-      <button class="btn btn-warning text-right float-right" (click)="goBack()" type="button" aria-haspopup="true" aria-expanded="false">
-        go back <i class="nav-icon i-Arrow-Left"></i>
-      </button>
+   <app-go-back-button></app-go-back-button>
     </div>
     <div class="card-body">
 

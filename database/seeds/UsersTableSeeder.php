@@ -34,7 +34,7 @@ class UsersTableSeeder extends Seeder
         $this->user->store([
             'fullname' => $faker->name,
             'email' => 'johndoe@example.com',
-            'password' => bcrypt('secret'),
+            'password' => 'secret',
         ]);
     }
 }

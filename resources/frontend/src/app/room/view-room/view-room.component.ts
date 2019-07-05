@@ -30,7 +30,4 @@ export class ViewRoomComponent implements OnInit {
     });
   }
 
-  goBack(): void {
-    this.location.back();
-  }
 }

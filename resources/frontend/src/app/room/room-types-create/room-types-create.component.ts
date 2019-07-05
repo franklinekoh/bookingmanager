@@ -43,8 +43,4 @@ export class RoomTypesCreateComponent implements OnInit {
     }
   }
 
-  goBack(): void {
-    this.location.back();
-  }
-
 }
