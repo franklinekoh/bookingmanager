@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {BookingsService} from '../../services/bookings.service';
 import {ActivatedRoute} from '@angular/router';
-import {Location} from '@angular/common';
 
 @Component({
   selector: 'app-view-booking',
@@ -12,8 +11,7 @@ export class ViewBookingComponent implements OnInit {
 
   constructor(
     private bookingService: BookingsService,
-    private route: ActivatedRoute,
-    private location: Location
+    private route: ActivatedRoute
   ) { }
   heading = 'View Bookings';
   bookingData: any;

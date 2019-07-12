@@ -19,7 +19,6 @@ export class BookingsComponent implements OnInit {
 
   heading = 'Bookings';
   bookingsData: any[];
-  roomsData: any[];
   filterForm: any;
   ngOnInit() {
     this.getBookings();
@@ -32,7 +31,6 @@ export class BookingsComponent implements OnInit {
     this.bookingService.getAllBooking().subscribe(data => {
       if (data.status === true) {
         this.bookingsData = data.data;
-        console.log(data.data);
       }
     },error => {
       console.log(error);
