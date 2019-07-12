@@ -105,9 +105,7 @@ export class EditBookingComponent implements OnInit {
           'startDate': this.editForm.value.startDate,
           'endDate': this.editForm.value.endDate
         };
-        console.log(body);
         this.bookingService.getTotalValueForBooking(body).subscribe(data => {
-          console.log(data);
           this.editForm.patchValue({
             'totalNights': data.data.total_nights,
             'totalPrice': `${data.data.total_price.amount} ${data.data.total_price.currency}`

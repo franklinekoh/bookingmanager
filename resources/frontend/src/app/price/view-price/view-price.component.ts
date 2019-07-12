@@ -27,7 +27,6 @@ export class ViewPriceComponent implements OnInit {
     const id = +this.route.snapshot.paramMap.get('id');
     this.price.getPriceByID(id).subscribe(data => {
       this.priceData = data.data;
-      console.log(data.data);
     }, error => {
       console.log(error);
     });

@@ -23,7 +23,6 @@ export class HotelService {
       tap((data: any) => {
       }),
       catchError(err => {
-
         return throwError(err);
       })
     );

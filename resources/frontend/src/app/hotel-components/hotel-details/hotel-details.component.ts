@@ -11,8 +11,7 @@ import { Location } from '@angular/common';
 export class HotelDetailsComponent implements OnInit {
 
   constructor(private hotelService: HotelService,
-              private route: ActivatedRoute,
-              private location: Location) { }
+              private route: ActivatedRoute) { }
   hotelData: any;
   heading = `Hotel Details`;
   ngOnInit() {
@@ -22,7 +21,6 @@ export class HotelDetailsComponent implements OnInit {
   getHotel() {
     const id = +this.route.snapshot.paramMap.get('id');
     this.hotelService.getHotel(id).subscribe(data => {
-      console.log(data);
       this.hotelData = data.data;
     }, err => {
       console.log(err);

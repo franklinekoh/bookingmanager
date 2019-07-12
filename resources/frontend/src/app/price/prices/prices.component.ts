@@ -23,7 +23,6 @@ export class PricesComponent implements OnInit {
   getAllPrices() {
     this.priceService.getAllPrices().subscribe(data => {
       this.priceData = data.data;
-      console.log(data);
     }, error => {
       console.log(error);
     });

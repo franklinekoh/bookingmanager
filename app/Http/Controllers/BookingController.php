@@ -121,7 +121,8 @@ class BookingController extends Controller
             'customer_email' => $request->input('customerEmail'),
             'total_nights' => $request->input('totalNights'),
             'total_price' => $request->input('totalPrice'),
-            'user_id' => $userID
+            'user_id' => $userID,
+            'phone' => ($request->has('phone'))?$request->input('phone'):null
         ]);
 
 

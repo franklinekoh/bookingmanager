@@ -29,7 +29,6 @@ export class RoomTypesCreateComponent implements OnInit {
 
   submitCreateForm() {
     if (this.createForm.dirty && this.createForm.valid){
-      console.log(this.createForm.value);
       this.roomType.createRoomTypes(this.createForm.value).subscribe(data => {
         if (data.status === true) {
           this.toastr.success(data.message);

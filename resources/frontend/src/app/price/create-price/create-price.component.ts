@@ -47,7 +47,6 @@ export class CreatePriceComponent implements OnInit {
   getRoomType() {
     this.roomType.getRoomTypes().subscribe(data => {
       this.roomTypesData = data.data;
-      console.log(data);
     },error => {
       console.log(error);
     });

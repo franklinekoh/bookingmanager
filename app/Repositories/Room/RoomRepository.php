@@ -50,7 +50,7 @@ class RoomRepository implements RoomRepositoryInterface
      */
     public function getRoomByID($roomID){
         try{
-            return  Room::find($roomID)
+            return  Room::where('rooms.id',$roomID)
                 ->join('room_type', 'room_type.id', '=', 'rooms.room_type_id')
                 ->join('hotels', 'rooms.hotel_id', '=', 'hotels.id')
                 ->leftJoin('prices', 'room_type.id', '=', 'prices.room_type_id')
@@ -106,7 +106,8 @@ class RoomRepository implements RoomRepositoryInterface
                     'email',
                     'image_path as hotel_image_path',
                     'amount',
-                    'currency']);
+                    'currency',
+                    'room_image_path']);
         }catch (QueryException $ex){
             return $ex->getMessage();
         }

@@ -13,6 +13,6 @@ class Bookings extends Model
      */
 
     protected $fillable = [
-        'room_id', 'start_date', 'end_date', 'customer_fullname', 'customer_email', 'total_nights', 'total_price', 'user_id'
+        'room_id', 'start_date', 'end_date', 'customer_fullname', 'customer_email', 'phone', 'total_nights', 'total_price', 'user_id'
     ];
 }

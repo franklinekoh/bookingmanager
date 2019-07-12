@@ -20,6 +20,7 @@ class CreateBookingsTable extends Migration
             $table->date('end_date');
             $table->string('customer_fullname');
             $table->string('customer_email');
+            $table->string('phone')->nullable();
             $table->integer('total_nights');
             $table->bigInteger('total_price');
             $table->bigInteger('user_id')->unsigned()->nullable();

@@ -34,7 +34,6 @@ export class EditRoomTypeComponent implements OnInit {
   submitEditForm() {
     if (this.editForm.valid){
       const id = +this.route.snapshot.paramMap.get('id');
-      console.log(this.editForm.value);
       this.roomType.updateRoomTypes({
         'roomTypeID': id,
         'type_name': this.editForm.value.typeName

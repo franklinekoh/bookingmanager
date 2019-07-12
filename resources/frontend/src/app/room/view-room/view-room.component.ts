@@ -23,7 +23,6 @@ export class ViewRoomComponent implements OnInit {
   getRoom() {
     const id = +this.route.snapshot.paramMap.get('id');
     this.roomService.getRoomByID(id).subscribe(data => {
-      console.log(data);
       this.roomData = data.data;
     }, err => {
       console.log(err);

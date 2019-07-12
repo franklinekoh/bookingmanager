@@ -43,7 +43,6 @@ export class EditHotelComponent implements OnInit {
   getHotel() {
     const id = +this.route.snapshot.paramMap.get('id');
     this.hotelService.getHotel(id).subscribe(data => {
-      console.log(data);
       this.hotelName = data.data.name;
       this.editForm.patchValue({
         'name': data.data.name,
@@ -82,7 +81,6 @@ export class EditHotelComponent implements OnInit {
       body.append('phone', this.editForm.value.phone);
       body.append('email', this.editForm.value.email);
       this.hotelService.editHotel(body).subscribe(data => {
-        console.log(data);
         if (data.status === true) {
           this.toastr.success(data.message);
         }

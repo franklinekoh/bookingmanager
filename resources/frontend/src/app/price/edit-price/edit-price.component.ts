@@ -55,7 +55,6 @@ export class EditPriceComponent implements OnInit {
   getRoomType() {
     this.roomType.getRoomTypes().subscribe(data => {
       this.roomTypesData = data.data;
-      console.log(data);
     },error => {
       console.log(error);
     });
@@ -63,7 +62,6 @@ export class EditPriceComponent implements OnInit {
   getPriceDetail() {
     const id = +this.route.snapshot.paramMap.get('id');
     this.price.getPriceByID(id).subscribe(data => {
-      // console
       this.priceDetail = data.data;
       this.editForm.patchValue({
         'amount': data.data.amount,

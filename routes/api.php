@@ -110,8 +110,6 @@ Route::group([
 
     Route::get('/{bookingID}', 'BookingController@getBookingByID');
 
-    Route::post('/total', 'BookingController@getTotalNightAndPrice');
-
     Route::post('user/', 'BookingController@storeBookingForRegisteredUsers');
 
     Route::put('/', 'BookingController@editBooking');
@@ -120,4 +118,8 @@ Route::group([
 
 });
 
-Route::post('bookings/visitor/', 'BookingController@storeBookingForUnregisteredUsers');
+Route::group(['prefix' => 'bookings'], function (){
+    Route::post('/total', 'BookingController@getTotalNightAndPrice');
+
+    Route::post('/visitor/', 'BookingController@storeBookingForUnregisteredUsers');
+});

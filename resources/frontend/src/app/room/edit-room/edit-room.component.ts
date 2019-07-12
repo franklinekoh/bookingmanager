@@ -48,7 +48,6 @@ export class EditRoomComponent implements OnInit {
     const id = +this.route.snapshot.paramMap.get('id');
     this.roomService.getRoomByID(id).subscribe(data => {
       this.roomData = data.data;
-      console.log(data.data);
       this.editForm.patchValue({
         'roomName': data.data.room_name,
         'roomTypeID': data.data.room_type_id,
@@ -62,7 +61,6 @@ export class EditRoomComponent implements OnInit {
   getHotel(){
     this.hotelService.getAllHotel().subscribe(data => {
       this.hotelData = data.data;
-      console.log(data.data);
     }, error => {
       console.log(error);
     });
@@ -71,7 +69,6 @@ export class EditRoomComponent implements OnInit {
   getRoomTypes(){
     this.roomTypeService.getRoomTypes().subscribe(data => {
       this.roomTypeData = data.data;
-      console.log(data.data);
     }, error => {
       console.log(error);
     });
