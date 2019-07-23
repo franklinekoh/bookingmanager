@@ -27,6 +27,7 @@ This is a hotel booking system Manager. This application is able to register a n
 
 -   Follow the instructions in the Local Section Setup Above.
 -   Run `php artisan migrate`.
+-   Run `php artisan db:seed`.
 -   Visit `localhost:4200`.
 
 ##### Login Paramters
