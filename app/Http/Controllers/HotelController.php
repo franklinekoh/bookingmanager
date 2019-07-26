@@ -108,7 +108,7 @@ class HotelController extends Controller
 
         if (array_key_exists('image', $data)){
 
-            
+
         }
 
 
