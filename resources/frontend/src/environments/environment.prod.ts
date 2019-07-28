@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  apiUrl: 'https://mighty-bastion-47656.herokuapp.com/api/'
 };

@@ -33,3 +33,12 @@ This is a hotel booking system Manager. This application is able to register a n
 ##### Login Paramters
 -   `Email: Johndoe@example.com`
 -   `Password: secret`
+
+#### Live Url
+
+##### Backend (Laravel)
+https://mighty-bastion-47656.herokuapp.com/
+
+##### Frontend (Angular js)
+https://evening-lake-94747.herokuapp.com
+
